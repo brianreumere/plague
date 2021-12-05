@@ -1,6 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     font-size: 16px;
+    line-height: 1.5;
     background-color: #fcfcfc;
     max-width: 740px;
     margin-right: auto;
@@ -29,7 +30,6 @@ p {
 .site-header {
     font-size: 26px;
     font-weight: 300;
-    letter-spacing: -1px;
     float: left;
     line-height: 54px;
     letter-spacing: -1px;
