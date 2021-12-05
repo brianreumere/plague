@@ -1,5 +1,7 @@
 {{ define "main" }}
 <h1 class="post-title">{{ .Title }}</h1>
-<span class="post-date">{{ .Date | time.Format ":date_long" }}</span><br>
+<p class="post-date">
+    <span class="post-date">{{ .Date | time.Format ":date_long" }}</span><br>
+</p>
 {{.Content}}
 {{ end }}
