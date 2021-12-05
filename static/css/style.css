@@ -46,6 +46,22 @@ main {
     font-size: 14px;
 }
 
+.post-title {
+    font-size: 42px;
+}
+
+pre, code {
+    font-family: 'SF Mono', 'Consolas', monospace;
+    font-size: 14px;
+}
+
+pre {
+    padding: 5px;
+    background-color: #000000;
+    font: #FFFFFF;
+    overflow-x: auto;
+}
+
 a {
     text-decoration: none;
 }
