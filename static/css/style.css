@@ -8,6 +8,10 @@ body {
     padding-left: 30px;
 }
 
+main {
+    display: block;
+}
+
 .site-header {
     font-size: 26px;
     font-weight: 300;
