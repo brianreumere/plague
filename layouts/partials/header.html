@@ -1,3 +1,11 @@
 {{ block "header" . }}
 <h1>{{ .Site.Params.siteHeaderText }}</h1>
 {{ end }}
+<h2>
+    <nav class="nav">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        {{ end }}
+    </nav>
+</h2>
