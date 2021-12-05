@@ -1,3 +1,32 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    background-color: #fcfcfc;
+    max-width: 740px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.site-header {
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    float: left;
+}
+
+.site-nav {
+    float: right;
+}
+
+.nav-item {
+    color: #4A2DB3;
+}
+
+.nav-item.active {
+    color: #0f0f0f;
+}
+
+a {
+    text-decoration: none;
 }

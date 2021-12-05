@@ -1,11 +1,9 @@
 {{ block "header" . }}
-<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Params.siteHeaderText }}</a></h1>
-<h2>
-    <nav class="nav">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-        {{ end }}
-    </nav>
-</h2>
+<a class="site-header" href="{{ .Site.BaseURL }}">{{ .Site.Params.siteHeaderText }}</a></div>
+<nav class="site-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+</nav>
 {{ end }}
