@@ -9,6 +9,7 @@ body {
     margin-bottom: 0;
     padding-right: 30px;
     padding-left: 30px;
+    color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,6 +33,10 @@ p {
     float: left;
     line-height: 54px;
     letter-spacing: -1px;
+}
+
+.site-header, .site-header:visited {
+    color: #000000;
 }
 
 .site-nav {
