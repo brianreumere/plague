@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ range .Paginator.Pages }}
 <p>
-    {{ .Date | time.Format ":date_long" }}<br>
+    <span class="post-date">{{ .Date | time.Format ":date_long" }}</span><br>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
 </p>
 {{ end }}

@@ -1,5 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: 16px;
     background-color: #fcfcfc;
     max-width: 740px;
     margin-right: auto;
@@ -37,6 +38,11 @@ main {
     padding-top: 30px;
     padding-bottom: 30px;
     clear: both;
+}
+
+.post-date {
+    color: #828282;
+    font-size: 14px;
 }
 
 a {
