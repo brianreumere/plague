@@ -1,6 +1,5 @@
 {{ block "header" . }}
 <h1>{{ .Site.Params.siteHeaderText }}</h1>
-{{ end }}
 <h2>
     <nav class="nav">
         {{ $currentPage := . }}
@@ -9,3 +8,4 @@
         {{ end }}
     </nav>
 </h2>
+{{ end }}
