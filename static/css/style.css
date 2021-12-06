@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #fcfcfc;
+    background-color: #FFFFFF;
     max-width: 740px;
     margin-right: auto;
     margin-left: auto;
@@ -80,7 +80,7 @@ a.nav-item:visited {
 }
 
 .post-date {
-    color: #737373;
+    color: #595959;
     font-size: 14px;
 }
 
@@ -102,7 +102,7 @@ pre {
 
 footer {
     margin-bottom: 15px;
-    color: #737373;
+    color: #595959;
     font-size: 14px;
 }
 
