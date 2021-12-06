@@ -1,6 +1,32 @@
 # plague
 
-plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that might have some [IndieWeb](https://indieweb.org/) stuff like [microformats](https://microformats.org/) at some point. For now it's a work in progress.
+plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that might have some [IndieWeb](https://indieweb.org/) stuff like [microformats](https://microformats.org/) at some point. For now it's a work in progress. It also draws heavily from the [Indigo theme](https://github.com/AngeloStavrow/indigo).
+
+## IndieWeb
+
+To show an [h-card](https://microformats.org/wiki/h-card) in the footer of every page, set `showHcard` to `true` in your site's `config.toml` file. For example:
+
+```
+[params]
+  showHcard = true
+```
+
+To populate the h-card, create a `[params.indieWeb]` section in `config.toml` and populate it. Only some of the fields are required (will be documented more fully later, with all possible social handles too). For example:
+
+```
+[params.indieWeb]
+    avatar = "images/avatar.jpg"
+    fullName = "someone"
+    nickname = "something"
+    emailAddress = "someone@example.com"
+    gitHubUsername = "something"
+    twitterHandle = "something"
+
+    [param.indieWeb.location]
+      city = "somewhere"
+      region = "somewhere"
+      country = "somewhere"
+```
 
 ## Examples
 
@@ -47,3 +73,7 @@ menu:
 
 [email](mailto:someone@example.com)
 ```
+
+## Sublicenses
+
+The social icons are from the [Indigo theme](https://github.com/AngeloStavrow/indigo) by [AngeloStavrow](https://github.com/AngeloStavrow). [The MIT license for these is included here](LICENSE.indigo).
