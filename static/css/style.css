@@ -86,6 +86,11 @@ pre {
     overflow-x: auto;
 }
 
+footer {
+    color: #828282;
+    font-size: 14px;
+}
+
 a {
     text-decoration: none;
 }
