@@ -1,1 +1,1 @@
-{{ with .Site.Params.FooterContent }}{{ $.RenderString . }}{{ end }}
+{{ with .Site.Params.FooterContent }}{{ . | markdownify }}{{ end }}
