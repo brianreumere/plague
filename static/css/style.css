@@ -111,6 +111,11 @@ img.u-photo {
     height: 1.5 em;
 }
 
+hr {
+    border: 1.75px solid;
+    width: 15%;
+}
+
 a {
     text-decoration: none;
     color: #4A2DB3;
