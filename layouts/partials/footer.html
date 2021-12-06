@@ -1,9 +1,9 @@
 {{ if .Site.Params.ShowHcard }}
-{{ with .Site.Params.FooterSeparator }}{{ . }}{{ end }}
+<hr>
 {{- partial "hcard.html" . -}}
 {{ end }}
 {{ with .Site.Params.SiteFooterText }}
-{{ with .Site.Params.FooterSeparator }}{{ . }}{{ end }}
+<hr>
 <p>
     {{ . | markdownify }}
 </p>
