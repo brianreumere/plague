@@ -54,7 +54,6 @@ p {
 }
 
 .nav-item {
-    color: #4A2DB3;
     padding-left: 20px;
 }
 
@@ -72,7 +71,7 @@ p {
 }
 
 .post-date {
-    color: #828282;
+    color: #767676;
     font-size: 14px;
 }
 
@@ -94,10 +93,23 @@ pre {
 
 footer {
     margin-bottom: 15px;
-    color: #828282;
+    color: #767676;
     font-size: 14px;
 }
 
 a {
     text-decoration: none;
+    color: #4A2DB3;
+}
+
+a:visited {
+    color: #3c219b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #6344ff;
 }
