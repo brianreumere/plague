@@ -3,16 +3,17 @@
 
 name = "plague"
 license = "MIT"
-licenselink = "https://gitlab.com/br41_/plague/-/blob/master/LICENSE"
-description = "Minimal theme with IndieWeb stuff"
-homepage = "https://gitlab.com/br41_/plague"
-tags = []
-features = []
+
+licenselink = "https://github.com/brianreumere/plague/blob/main/LICENSE"
+description = "Minima-inspired theme with IndieWeb stuff"
+homepage = "https://github.com/brianreumere/plague"
+tags = ["blog", "minimal"]
+features = ["blog"]
 min_version = "0.41.0"
 
 [author]
-  name = "brian@br41.net"
-  homepage = "https://br41.net"
+  name = "brian@mutualaid.info"
+  homepage = "https://mutualaid.info"
 
 # If porting an existing theme
 [original]
