@@ -1,1 +1,1 @@
-{{ .RenderString .Site.Params.FooterContent }}
+{{ with .Site.Params.FooterContent }}{{ .RenderString . }}{{ end }}
