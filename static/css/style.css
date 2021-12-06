@@ -44,8 +44,9 @@ p {
     letter-spacing: -1px;
 }
 
-.site-header, .site-header:visited {
+.site-header, .site-header:visited, .site-header:hover {
     color: #000000;
+    text-decoration: none;
 }
 
 .site-nav {
@@ -59,6 +60,14 @@ p {
 
 .nav-item.active {
     color: #0f0f0f;
+}
+
+a.nav-item:hover {
+    text-decoration: none;
+}
+
+a.nav-item:visited {
+    color: #4A2DB3;
 }
 
 .content {
