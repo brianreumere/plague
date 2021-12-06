@@ -4,5 +4,7 @@
 {{ end }}
 {{ with .Site.Params.FooterText }}
 <hr>
-{{ . | markdownify }}
+<p>
+    {{ . | markdownify }}
+</p>
 {{ end }}
