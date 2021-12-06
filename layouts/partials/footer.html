@@ -1,1 +1,8 @@
-{{ with .Site.Params.FooterContent }}{{ . | markdownify }}{{ end }}
+{{ if .Site.Params.ShowHcard }}
+<hr>
+{{- partial "hcard.html" . -}}
+{{ end }}
+{{ with .Site.Params.FooterText }}
+<hr>
+{{ . | markdownify }}
+{{ end }}
