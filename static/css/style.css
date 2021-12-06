@@ -108,7 +108,8 @@ footer {
 
 img.u-photo {
     vertical-align: bottom;
-    height: 1.5 em;
+    height: 1.5em;
+    border-radius: 25%;
 }
 
 hr {
