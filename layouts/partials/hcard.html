@@ -2,7 +2,7 @@
     This is an example h-card that will be displayed in the footer of the site. You should create your own at <code>layouts/partials/hcard.html</code>.
 </p>
 <p>
-    <a class="u-url" href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a>
+    <a class="u-url" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
     created by <img class="u-photo" src="{{ .Site.Params.Avatar | absURL }}" /> <span class="p-name" rel="me">{{ .Site.Params.IndieWeb.FullName }}</a> (also known as <span class="p-nickname">brianreumere</span>)
     in <span class="p-locality">{{ .Site.Params.IndieWeb.City }}</span>, <span class="p-region">{{ .Site.Params.IndieWeb.Region }}</span>, <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>.
 </p>
