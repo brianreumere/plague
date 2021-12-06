@@ -66,7 +66,9 @@ p {
     padding-top: 30px;
     padding-bottom: 30px;
     clear: both;
-    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
 }
 
 .post-date {
@@ -91,6 +93,7 @@ pre {
 }
 
 footer {
+    margin-bottom: 15px;
     color: #828282;
     font-size: 14px;
 }
