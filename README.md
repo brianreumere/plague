@@ -1,6 +1,6 @@
 # plague
 
-plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that might have some [IndieWeb](https://indieweb.org/) stuff like [microformats](https://microformats.org/) at some point. For now it's a work in progress. It also draws heavily from the [Indigo theme](https://github.com/AngeloStavrow/indigo).
+plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that has some [IndieWeb](https://indieweb.org/) stuff like [microformats](https://microformats.org/). It is a work in progress. It also draws heavily from the [Indigo theme](https://github.com/AngeloStavrow/indigo).
 
 Add the theme to your Hugo site by running the following command from your site directory:
 
