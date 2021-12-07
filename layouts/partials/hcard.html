@@ -1,5 +1,6 @@
 <!-- Default h-card -->
 <p>
+    {{ $pronouns_len := (len .Site.Params.IndieWeb.Pronouns) }}
     <a class="u-url" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
     created by {{ with .Site.Params.IndieWeb.Avatar }}<img class="u-photo" src="{{ . | absURL }}" /> {{ end }}<span class="p-name" rel="me">{{ .Site.Params.IndieWeb.FullName }}</span>
     {{ with .Site.Params.IndieWeb.Pronouns }}({{ range . }}<span class="u-pronoun">{{ . }}</span>/{{ end }} pronouns{{ end }}{{ if isset .Site.Params.IndieWeb "nickname" }}{{ with .Site.Params.IndieWeb.Pronouns }}, {{ else }}({{ end }}also known as <span class="p-nickname">{{ .Site.Params.IndieWeb.Nickname }}</span> some places{{ end }}){{ if not .Site.Params.IndieWeb.ShowLocation }}.{{ end }}
