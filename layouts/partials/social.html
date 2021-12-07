@@ -4,5 +4,4 @@
 {{ if eq $index "twitter" }}{{ $href := (printf "%s%v" "https://twitter.com/" $element) }}{{ end }}
 <a class="u-url" rel="me" href="asdf"><img class="social-icon" alt="Email" src="{{ (printf "%s%v" "icons/" $index) | absURL }}"></a>
 <b>{{ $index }}</b>
-<b>{{ $href }}</b>
 {{ end }}
