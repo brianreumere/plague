@@ -8,5 +8,5 @@
     {{ with .Site.Params.IndieWeb.GitHubUsername }}<link rel="me" href="https://github.com/{{ . }}">{{ end }}
     {{ with .Site.Params.IndieWeb.TwitterHandle }}<link rel="me" href="https://twitter.com/{{ . }}">{{ end }}
     {{ with .Site.Params.IndieWeb.MicroBlogUser }}<link rel="me" href="https://micro.blog/{{ . }}">{{ end }}
-    <link rel="stylesheet" href={{ "css/style.css" | absURL }}>
+    <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
 </head>
