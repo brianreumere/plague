@@ -2,8 +2,8 @@
 <p>
     <a class="u-url" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
     created by {{ with .Site.Params.IndieWeb.Avatar }}<img class="u-photo" src="{{ . | absURL }}" /> {{ end }}<span class="p-name" rel="me">{{ .Site.Params.IndieWeb.FullName }}</span>
-    {{ with .Site.Params.IndieWeb.Nickname }} (also known as <span class="p-nickname">{{ . }}</span> some places){{ end }}{{ if not .Site.Params.IndieWeb.ShowLocation }}.{{ end }}
-    {{ if .Site.Params.IndieWeb.ShowLocation }} in
+    {{ with .Site.Params.IndieWeb.Pronouns }}({{ range . }}<span class="u-pronoun">{{ . }}</span>/{{ end }} pronouns{{ end }}{{ with .Site.Params.IndieWeb.Nickname }}{{ if isset .Site.Params.IndieWeb.Pronouns }}, {{ end }}{{ if not isset .Site.Params.IndieWeb.Pronouns }}({{ end }}also known as <span class="p-nickname">{{ . }}</span> some places{{ end }}{{ if not .Site.Params.IndieWeb.ShowLocation }}.{{ end }}
+    {{ if .Site.Params.IndieWeb.ShowLocation }}in
     {{ with .Site.Params.IndieWeb.City }} <span class="p-locality">{{ . }}</span>,{{ end }}
     {{ with .Site.Params.IndieWeb.Region }} <span class="p-region">{{ . }}</span>,{{ end }}
     {{ with .Site.Params.IndieWeb.Country }} <span class="p-country-name">{{ . }}</span>{{ end }}.
