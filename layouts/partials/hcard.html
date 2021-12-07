@@ -7,8 +7,7 @@ created by {{ with .Site.Params.IndieWeb.Avatar }}<img class="u-photo" src="{{ .
 {{ with .Site.Params.IndieWeb.City }} <span class="p-locality">{{ . }}</span>,{{ end }}
 {{ with .Site.Params.IndieWeb.Region }} <span class="p-region">{{ . }}</span>,{{ end }}
 {{ with .Site.Params.IndieWeb.Country }} <span class="p-country-name">{{ . }}</span>{{ end }}
-{{ end }}
-.
+{{ end }}.
 </p>
 {{ with .Site.Params.IndieWeb.Biography }}<p>
 <span class="p-note">{{ . | markdownify }}</span>
