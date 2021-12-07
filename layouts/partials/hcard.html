@@ -1,17 +1,15 @@
 <!-- Default h-card -->
 <p>
-    <a class="u-url" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    created by {{ with .Site.Params.IndieWeb.Avatar }}<img class="u-photo" src="{{ . | absURL }}" /> {{ end }}<span class="p-name" rel="me">{{ .Site.Params.IndieWeb.FullName }}</a>
-    {{ with .Site.Params.IndieWeb.Nickname }} (also known as <span class="p-nickname">{{ . }}</span> some places){{ end }}
-    {{ with .Site.Params.IndieWeb.Location }} in
-    {{ with .Site.Params.IndieWeb.Location.City }} <span class="p-locality">{{ . }}</span>,{{ end }}
-    {{ with .Site.Params.IndieWeb.Location.Region }} <span class="p-region">{{ . }}</span>,{{ end }}
-    {{ with .Site.Params.IndieWeb.Location.Country }} <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>{{ end }}
-    .{{ end }}
+<a class="u-url" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+created by {{ with .Site.Params.IndieWeb.Avatar }}<img class="u-photo" src="{{ . | absURL }}" /> {{ end }}<span class="p-name" rel="me">{{ .Site.Params.IndieWeb.FullName }}</a>
+{{ with .Site.Params.IndieWeb.Nickname }} (also known as <span class="p-nickname">{{ . }}</span> some places){{ end }}
+{{ with .Site.Params.IndieWeb.Location }} in
+{{ with .Site.Params.IndieWeb.Location.City }} <span class="p-locality">{{ . }}</span>,{{ end }}
+{{ with .Site.Params.IndieWeb.Location.Region }} <span class="p-region">{{ . }}</span>,{{ end }}
+{{ with .Site.Params.IndieWeb.Location.Country }} <span class="p-country-name">{{ .Site.Params.IndieWeb.Country }}</span>{{ end }}
+.{{ end }}
 </p>
 {{ with .Site.Params.IndieWeb.Biography }}<p>
-    <span class="p-note">{{ . | markdownify }}</span>
+<span class="p-note">{{ . | markdownify }}</span>
 </p>{{ end }}
-<p>
-    Add social icons here???
-</p>
+<!-- Add social icons here? -->

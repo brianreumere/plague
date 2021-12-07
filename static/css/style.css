@@ -115,6 +115,7 @@ img.u-photo {
 hr {
     border: 1.75px solid;
     width: 40px;
+    margin: 0px;
 }
 
 a {
