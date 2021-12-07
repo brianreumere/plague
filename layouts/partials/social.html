@@ -2,5 +2,6 @@
 {{ if eq $index "Email" }}{{ $href := (printf "%s%v" "mailto:" $element) }}{{ end }}
 {{ if eq $index "Github" }}{{ $href := (printf "%s%v" "https://github.com/" $element) }}{{ end }}
 {{ if eq $index "Twitter" }}{{ $href := (printf "%s%v" "https://twitter.com/" $element) }}{{ end }}
+{{ $href := (printf "%s%v" "https://twitter.com/" $element) }}
 <a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="Email" src="{{ (printf "%s%v" "icons/" $index) | absURL }}"></a>
 {{ end }}
