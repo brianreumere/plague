@@ -100,6 +100,17 @@ pre {
     overflow-x: auto;
 }
 
+blockquote {
+    background-color: #F0F0F0;
+    border-left: 10px solid #AAAAAA;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 15px;
+}
+
 footer {
     margin-bottom: 15px;
     color: #595959;
@@ -110,6 +121,15 @@ img.u-photo {
     vertical-align: bottom;
     height: 1.5em;
     border-radius: 25%;
+}
+
+.h-card-social {
+    text-align: center;
+}
+
+img.social-icon {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 a {
