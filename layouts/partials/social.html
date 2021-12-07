@@ -1,6 +1,6 @@
 {{ range $index, $element := .Site.Params.IndieWeb.Social }}
-{{ if eq $index "email" }}{{ $href := (printf "%s%v" "mailto:" $element) }}{{ end }}
-{{ if eq $index "github" }}{{ $href := (printf "%s%v" "https://github.com/" $element) }}{{ end }}
-{{ if eq $index "twitter" }}{{ $href := (printf "%s%v" "https://twitter.com/" $element) }}{{ end }}
+{{ if eq $index "Email" }}{{ $href := (printf "%s%v" "mailto:" $element) }}{{ end }}
+{{ if eq $index "Github" }}{{ $href := (printf "%s%v" "https://github.com/" $element) }}{{ end }}
+{{ if eq $index "Twitter" }}{{ $href := (printf "%s%v" "https://twitter.com/" $element) }}{{ end }}
 <a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="Email" src="{{ (printf "%s%v" "icons/" $index) | absURL }}"></a>
 {{ end }}
