@@ -2,6 +2,12 @@
 
 plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that might have some [IndieWeb](https://indieweb.org/) stuff like [microformats](https://microformats.org/) at some point. For now it's a work in progress. It also draws heavily from the [Indigo theme](https://github.com/AngeloStavrow/indigo).
 
+Add the theme to your Hugo site by running the following command from your site directory:
+
+```
+git submodule add https://github.com/brianreumere/plague.git themes/plague
+```
+
 ## IndieWeb
 
 To show an [h-card](https://microformats.org/wiki/h-card) in the footer of every page, set `showHcard` to `true` in your site's `config.toml` file. For example:
