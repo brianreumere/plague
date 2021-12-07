@@ -4,9 +4,9 @@
 created by {{ with .Site.Params.IndieWeb.Avatar }}<img class="u-photo" src="{{ . | absURL }}" /> {{ end }}<span class="p-name" rel="me">{{ .Site.Params.IndieWeb.FullName }}</a>
 {{ with .Site.Params.IndieWeb.Nickname }} (also known as <span class="p-nickname">{{ . }}</span> some places){{ end }}
 {{ if .Site.Params.IndieWeb.ShowLocation }} in
-{{ with .Site.Params.IndieWeb.Location.City }} <span class="p-locality">{{ . }}</span>,{{ end }}
-{{ with .Site.Params.IndieWeb.Location.Region }} <span class="p-region">{{ . }}</span>,{{ end }}
-{{ with .Site.Params.IndieWeb.Location.Country }} <span class="p-country-name">{{ . }}</span>{{ end }}
+{{ with .Site.Params.IndieWeb.City }} <span class="p-locality">{{ . }}</span>,{{ end }}
+{{ with .Site.Params.IndieWeb.Region }} <span class="p-region">{{ . }}</span>,{{ end }}
+{{ with .Site.Params.IndieWeb.Country }} <span class="p-country-name">{{ . }}</span>{{ end }}
 {{ end }}
 .
 </p>
