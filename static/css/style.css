@@ -126,6 +126,8 @@ img.u-photo {
 img.social-icon {
     padding-left: 5px;
     padding-right: 5px;
+    height: 24px;
+    width: 24px;
 }
 
 a {

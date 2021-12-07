@@ -1,9 +1,9 @@
 {{ with .Site.Params.IndieWeb.EmailAddress }}
-<a class="u-url" rel="me" href="mailto:{{ . }}"><img class="social-icon" alt="Email" src={{ "icons/envelope.svg" | absURL }} height="24px" width="24px"></a>
+<a class="u-url" rel="me" href="mailto:{{ . }}"><img class="social-icon" alt="Email" src="{{ 'icons/envelope.svg' | absURL }}"></a>
 {{ end }}
 {{ with .Site.Params.IndieWeb.GitHubUsername }}
-<a class="u-url" rel="me" href="https://github.com/{{ . }}"><img class="social-icon" alt="GitHub" src={{ "icons/github.svg" | absURL }} height="24px" width="24px"></a>
+<a class="u-url" rel="me" href="https://github.com/{{ . }}"><img class="social-icon" alt="GitHub" src="{{ 'icons/github.svg' | absURL }}"></a>
 {{ end }}
 {{ with .Site.Params.IndieWeb.TwitterHandle }}
-<a class="u-url" rel="me" href="https://twitter.com/{{ . }}"><img class="social-icon" alt="Twitter" src={{ "icons/twitter.svg" | absURL }} height="24px" width="24px"></a>
+<a class="u-url" rel="me" href="https://twitter.com/{{ . }}"><img class="social-icon" alt="Twitter" src="{{ 'icons/twitter.svg' | absURL }}"></a>
 {{ end }}
