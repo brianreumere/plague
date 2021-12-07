@@ -8,37 +8,102 @@ Add the theme to your Hugo site by running the following command from your site 
 git submodule add https://github.com/brianreumere/plague.git themes/plague
 ```
 
+## Minimum config requirements
+
+These are the minimum required settings in your site's `config.toml` file for this theme to function.
+
+With [h-card](https://microformats.org/wiki/h-card):
+
+```
+baseURL = "https://example.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "example.com"
+theme = "plague"
+
+[params]
+  siteHeaderText = "My Website Name"
+  showHcard = true
+
+  [params.indieWeb]
+    fullName = "some name"
+```
+
+Without h-card:
+
+```
+baseURL = "https://example.com"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "example.com"
+theme = "plague"
+
+[params]
+  siteHeaderText = "My Website Name"
+```
+
 ## IndieWeb
 
-To show an [h-card](https://microformats.org/wiki/h-card) in the footer of every page, set `showHcard` to `true` in your site's `config.toml` file. For example:
+### h-card
+
+With `showHcard = true`, you can configure multiple additional values in `config.toml` to populate your h-card. With the exception of `fullName`, these are all optional:
 
 ```
 [params]
+  siteHeaderText = "My Website Name"
   showHcard = true
-```
 
-To populate the h-card, create a `[params.indieWeb]` section in `config.toml` and populate it. Only some of the fields are required (will be documented more fully later, with all possible social handles too). For example:
-
-```
-[params.indieWeb]
-    avatar = "images/avatar.jpg"
+  [params.indieWeb]
+    avatar = "images/me.jpg"
     fullName = "someone"
+    pronouns = [ "they", "them", "theirs" ]
     nickname = "something"
+    showLocation = true
+    city = "somewhere"
+    region = "somewhere"
+    country = "somewhere"
     emailAddress = "someone@example.com"
     gitHubUsername = "something"
     twitterHandle = "something"
-
-    [param.indieWeb.location]
-      city = "somewhere"
-      region = "somewhere"
-      country = "somewhere"
 ```
 
-## Examples
+See [The Pronouns in my h-card](https://wiki.zegnat.net/microformats/pronoun) regarding the `pronoun` h-card property.
+
+`showLocation` can be set to false or deleted (along with `city`, `region`, and `country`) to not include any location info in your h-card.
+
+The format of the h-card is in `layouts/partials/hcard.html`. If you want to customize the format, you can create a custom partial template at `layouts/partials/hcard.html` in your Hugo site directory.
+
+### h-entry
+
+The `fullName` and `avatar` (if it exists) properties are used on pages that use the `single` layout (typically a single blog post or article).
+
+## Non-IndieWeb customizations
+
+### Additional footer text
+
+This will render below the h-card. Markdown is supported. For example:
+
+```
+[params]
+  siteFooterText = "Powered by [Hugo](https://gohugo.io/) and the [plague](https://github.com/brianreumere/plague) theme."
+```
+
+If you want multiple lines (see the [TOML site](https://toml.io/en/)):
+
+```
+[params]
+  siteFooterText = """
+Powered by [Hugo](https://gohugo.io/).
+
+Styled with the [plague](https://github.com/brianreumere/plague) theme.
+"""
+```
+
+## Example pages
 
 ### Homepage
 
-By default, the homepage is a standalone page that will render Markdown-formatted content from `content/_index.md`. For example:
+By default, the homepage will render Markdown-formatted content from `content/_index.md`. For example:
 
 ```
 Welcome to the homepage. This is a list:
@@ -51,7 +116,7 @@ Welcome to the homepage. This is a list:
 
 ### List of posts
 
-If your site has a `content/posts` directory with blog posts, add an `_index.md` file that looks something like this:
+If your site has a `content/posts` directory with blog posts, add a `content/posts/_index.md` file that looks something like this:
 
 ```
 ---
