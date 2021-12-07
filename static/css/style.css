@@ -109,23 +109,26 @@ pre:focus {
 
 blockquote {
     background-color: #f0f0f0;
-    border-left: 10px solid #aaaaaa;
+    border-left: 10px solid #404040;
     border-radius: 5px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 1px;
-    padding-bottom: 1px;
     font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+blockquote p {
+    padding: 10px;
 }
 
 p.callout {
-    background-color: #f2e6ff;
-    border-left: 10px solid #aaaaaa;
+    background-color: #e6e6ff;
+    border-left: 10px solid #4747d1;
     border-radius: 5px;
-    padding-right: 15px;
+    padding: 10px;
     padding-left: 15px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 14px;
 }
 
