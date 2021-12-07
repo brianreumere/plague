@@ -5,7 +5,7 @@
         <span class="post-date">
             Published
             <a class="u-url" href="{{ .Permalink }}">
-                <time class="dt-published" datetime="{{ .Date }}">{{ .Date | time.Format ":date_long" }} </time>
+                <time class="dt-published" datetime="{{ .Date }}">{{ .Date | time.Format ":date_long" }}</time>
             </a>
             by {{ with .Site.Params.IndieWeb.Avatar }}<img class="u-photo" src="{{ . | absURL }}" /> {{ end }}<a class="p-name" rel="author" href="{{ .Site.BaseURL }}">{{ .Site.Params.IndieWeb.FullName }}</a>
         </span>
