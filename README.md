@@ -26,6 +26,8 @@ Make sure to do some stuff! This is important to read.
 {{< /callout >}}
 ```
 
+I might add additional shortcodes for differently colored callouts in the future.
+
 ## Minimum config requirements
 
 These are the minimum required settings in your site's `config.toml` file for this theme to function.
