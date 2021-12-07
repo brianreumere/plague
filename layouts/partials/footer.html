@@ -1,8 +1,10 @@
 {{ if .Site.Params.ShowHcard }}
-{{- partial "hcard.html" . -}}
+<div class="h-card">
+    {{- partial "hcard.html" . -}}
+</div>
 {{ end }}
 {{ with .Site.Params.SiteFooterText }}
-<p>
+<div class="footer-text">
     {{ . | markdownify }}
-</p>
+</div>
 {{ end }}
