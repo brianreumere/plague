@@ -8,6 +8,24 @@ Add the theme to your Hugo site by running the following command from your site 
 git submodule add https://github.com/brianreumere/plague.git themes/plague
 ```
 
+## Accessibility
+
+I'm not super familiar with web accessibility, but this theme does aim to be accessible to users who use the web with assistive technologies and devices.
+
+The [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) from [Web Accessibility in Mind (WebAIM)](https://webaim.org/) and the [MDN Accessibility documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility) were helpful to get to an initial baseline of accessibility. I'd also encourage you to read about writing accessible Markdown and documentation in general (some things I read are [Improving The Accessibility Of Your Markdown](https://www.smashingmagazine.com/2021/09/improving-accessibility-of-markdown/), [Writing accessible documentation](https://developers.google.com/style/accessibility), and [Alternative Text](https://webaim.org/techniques/alttext/)).
+
+## Hugo shortcodes
+
+There is a Hugo shortcode implemented to display a paragraph of text with a custom class name `callout` and [ARIA `note` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/note_role). You can use this instead of the `> ` Markdown blockquote syntax, since technically blockquotes are supposed to be actual quotations and not notes, call-outs, alerts, etc. (the `<aside>` tag also doesn't seem appropriate for this use case since it's intended to be for content that ["could be considered separate [from the content around the `aside` element](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-aside-element.html)).
+
+For example:
+
+```
+{{< callout >}}
+Make sure to do some stuff! This is important to read.
+{{< /callout >}}
+```
+
 ## Minimum config requirements
 
 These are the minimum required settings in your site's `config.toml` file for this theme to function.
@@ -72,6 +90,8 @@ See [The Pronouns in my h-card](https://wiki.zegnat.net/microformats/pronoun) re
 `showLocation` can be set to false or deleted (along with `city`, `region`, and `country`) to not include any location info in your h-card.
 
 The format of the h-card is in `layouts/partials/hcard.html`. If you want to customize the format, you can create a custom partial template at `layouts/partials/hcard.html` in your Hugo site directory.
+
+The social icons are also part of the h-card, and their links will have the `rel="me"` attribute included.
 
 ### h-entry
 
