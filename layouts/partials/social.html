@@ -1,7 +1,7 @@
-{{ range $index, $element := .Site.Params.IndieWeb.Social }}
+{{ range .Site.Params.IndieWeb.Social }}
 {{ $href := "" }}
-{{ if eq $index "email" }}{{ $href = (printf "%s%v" "mailto:" $element) }}{{ end }}
-{{ if eq $index "github" }}{{ $href = (printf "%s%v" "https://github.com/" $element) }}{{ end }}
-{{ if eq $index "twitter" }}{{ $href = (printf "%s%v" "https://twitter.com/" $element) }}{{ end }}
-<a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="{{ $index }}" src="{{ (printf "%s%v%s" "icons/" $index ".svg") | absURL }}"></a>
+{{ if eq .Platform "email" }}{{ $href = (printf "%s%v" "mailto:" .Identity) }}{{ end }}
+{{ if eq .Platform "github" }}{{ $href = (printf "%s%v" "https://github.com/" .Identity) }}{{ end }}
+{{ if eq .Platform "twitter" }}{{ $href = (printf "%s%v" "https://twitter.com/" .Identity) }}{{ end }}
+<a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="{{ .Platform }}" src="{{ (printf "%s%v%s" "icons/" .Platform ".svg") | absURL }}"></a>
 {{ end }}
