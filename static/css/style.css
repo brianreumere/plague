@@ -132,6 +132,12 @@ p.callout {
     font-size: 14px;
 }
 
+p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
     margin-bottom: 15px;
     color: #595959;
