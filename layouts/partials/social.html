@@ -1,10 +1,10 @@
 {{ range .Site.Params.IndieWeb.Social }}
 {{ $href := "" }}
-{{ if eq .Platform "email" }}{{ $href = (printf "%s%v" "mailto:" .Identity) }}{{ end }}
-{{ if eq .Platform "github" }}{{ $href = (printf "%s%v" "https://github.com/" .Identity) }}{{ end }}
-{{ if eq .Platform "twitter" }}{{ $href = (printf "%s%v" "https://twitter.com/" .Identity) }}{{ end }}
+{{ if eq .platform "email" }}{{ $href = (printf "%s%v" "mailto:" .identity) }}{{ end }}
+{{ if eq .platform "github" }}{{ $href = (printf "%s%v" "https://github.com/" .identity) }}{{ end }}
+{{ if eq .platform "twitter" }}{{ $href = (printf "%s%v" "https://twitter.com/" .identity) }}{{ end }}
 <b>{{ . }}</b>
 <b>{{ .platform }}</b>
 <b>{{ .identity }}</b>
-<a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="{{ .Platform }}" src="{{ (printf "%s%v%s" "icons/" .Platform ".svg") | absURL }}"></a>
+<a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="{{ .platform }}" src="{{ (printf "%s%v%s" "icons/" .platform ".svg") | absURL }}"></a>
 {{ end }}
