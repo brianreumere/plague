@@ -1,19 +1,19 @@
 {{ range .Site.Params.Hcard.Social }}
 {{ $href := "" }}
-{{- if eq .platform "email" }}{{ $href = (printf "%s%v" "mailto:" .identity) -}}{{ end }}
-{{- if eq .platform "facebook" }}{{ $href = (printf "%s%v" "https://www.facbook.com/" .identity) -}}{{ end }}
-{{- if eq .platform "flickr" }}{{ $href = (printf "%s%v" "https://www.flickr.com/people/" .identity) -}}{{ end }}
-{{- if eq .platform "github" }}{{ $href = (printf "%s%v" "https://github.com/" .identity) -}}{{ end }}
-{{- if eq .platform "gitlab" }}{{ $href = (printf "%s%v" "https://gitlab.com/" .identity) -}}{{ end }}
-{{- if eq .platform "glitch" }}{{ $href = (printf "%s%v" "https://glitch.com/@" .identity) -}}{{ end }}
-{{- if eq .platform "instagram" }}{{ $href = (printf "%s%v" "https://instagram.com/" .identity) -}}{{ end }}
-{{- if eq .platform "keybase" }}{{ $href = (printf "%s%v" "https://keybase.io/" .identity) -}}{{ end }}
-{{- if eq .platform "linkedin" }}{{ $href = (printf "%s%v" "https://www.linkedin.com/in/" .identity) -}}{{ end }}
-{{- if eq .platform "medium" }}{{ $href = (printf "%s%v%s" "https://" .identity ".medium.com") -}}{{ end }}
-{{- if eq .platform "microblog" }}{{ $href = (printf "%s%v" "https://micro.blog/" .identity) -}}{{ end }}
-{{- if eq .platform "reddit" }}{{ $href = (printf "%s%v" "https://www.reddit.com/user/" .identity) -}}{{ end }}
-{{- if eq .platform "stackoverflow" }}{{ $href = (printf "%s%v" "https://www.stackoverflow.com/users/" .identity) -}}{{ end }}
-{{- if eq .platform "tumblr" }}{{ $href = (printf "%s%v%s" "https://" .identity "tumblor.com") -}}{{ end }}
-{{- if eq .platform "twitter" }}{{ $href = (printf "%s%v" "https://twitter.com/" .identity) -}}{{ end }}
+{{- if eq .platform "email" }}{{ $href = (printf "%s%v" "mailto:" .identity) -}}{{ - end - }}
+{{- if eq .platform "facebook" }}{{ $href = (printf "%s%v" "https://www.facbook.com/" .identity) -}}{{ - end - }}
+{{- if eq .platform "flickr" }}{{ $href = (printf "%s%v" "https://www.flickr.com/people/" .identity) -}}{{ - end - }}
+{{- if eq .platform "github" }}{{ $href = (printf "%s%v" "https://github.com/" .identity) -}}{{ - end - }}
+{{- if eq .platform "gitlab" }}{{ $href = (printf "%s%v" "https://gitlab.com/" .identity) -}}{{ - end - }}
+{{- if eq .platform "glitch" }}{{ $href = (printf "%s%v" "https://glitch.com/@" .identity) -}}{{ - end - }}
+{{- if eq .platform "instagram" }}{{ $href = (printf "%s%v" "https://instagram.com/" .identity) -}}{{ - end - }}
+{{- if eq .platform "keybase" }}{{ $href = (printf "%s%v" "https://keybase.io/" .identity) -}}{{ - end - }}
+{{- if eq .platform "linkedin" }}{{ $href = (printf "%s%v" "https://www.linkedin.com/in/" .identity) -}}{{ - end - }}
+{{- if eq .platform "medium" }}{{ $href = (printf "%s%v%s" "https://" .identity ".medium.com") -}}{{ - end - }}
+{{- if eq .platform "microblog" }}{{ $href = (printf "%s%v" "https://micro.blog/" .identity) -}}{{ - end - }}
+{{- if eq .platform "reddit" }}{{ $href = (printf "%s%v" "https://www.reddit.com/user/" .identity) -}}{{ - end - }}
+{{- if eq .platform "stackoverflow" }}{{ $href = (printf "%s%v" "https://www.stackoverflow.com/users/" .identity) -}}{{ - end - }}
+{{- if eq .platform "tumblr" }}{{ $href = (printf "%s%v%s" "https://" .identity "tumblor.com") -}}{{ - end - }}
+{{- if eq .platform "twitter" }}{{ $href = (printf "%s%v" "https://twitter.com/" .identity) -}}{{ - end - }}
 <a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="{{ .platform }}" src="{{ (printf "%s%v%s" "icons/" .platform ".svg") | absURL }}"></a>
-{{ end }}
+{{ end - }}
