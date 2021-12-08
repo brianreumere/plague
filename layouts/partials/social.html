@@ -1,5 +1,5 @@
-{{ range .Site.Params.Hcard.Social }}
-{{ $href := "" }}
+{{- range .Site.Params.Hcard.Social -}}
+{{- $href := "" -}}
 {{- if eq .platform "email" }}{{ $href = (printf "%s%v" "mailto:" .identity) -}}{{- end -}}
 {{- if eq .platform "facebook" }}{{ $href = (printf "%s%v" "https://www.facbook.com/" .identity) -}}{{- end -}}
 {{- if eq .platform "flickr" }}{{ $href = (printf "%s%v" "https://www.flickr.com/people/" .identity) -}}{{- end -}}
