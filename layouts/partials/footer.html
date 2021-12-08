@@ -1,15 +1,15 @@
 {{ if .Site.Params.ShowHcard }}
 <div class="h-card">
     <div class="h-card-social">
-        {{- partial "social.html" . -}}
+        {{ partial "social.html" . -}}
     </div>
     <div class="h-card-bio">
         {{- partial "hcard.html" . -}}
     </div>
 </div>
-{{ end }}
-{{ with .Site.Params.SiteFooterText }}
+{{- end -}}
+{{- with .Site.Params.SiteFooterText -}}
 <div class="footer-text">
     {{ . | markdownify }}
 </div>
-{{ end }}
+{{- end -}}
