@@ -37,20 +37,12 @@ p {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #4343d0;
 }
 
-a:visited {
-    color: #2f2fbc;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 a:active {
-    color: #000000;
+    color: #212187;
 }
 
 .site-header {
