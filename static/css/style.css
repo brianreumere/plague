@@ -92,10 +92,6 @@ a.nav-item:hover {
     text-decoration: none;
 }
 
-a.nav-item:visited {
-    color: #4a2db3;
-}
-
 .content {
     padding-top: 30px;
     padding-bottom: 30px;
