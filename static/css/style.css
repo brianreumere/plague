@@ -148,6 +148,8 @@ p.callout {
 }
 
 hr {
+    border: 2px solid #595959;
+    border-radius: 5px;
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
