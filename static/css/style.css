@@ -36,6 +36,23 @@ p {
     margin-bottom: 15px;
 }
 
+a {
+    text-decoration: none;
+    color: #4a2db3;
+}
+
+a:visited {
+    color: #3c219b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: #6344ff;
+}
+
 .site-header {
     font-size: 26px;
     font-weight: 300;
@@ -55,7 +72,16 @@ p {
 }
 
 .nav-item {
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.nav-item.first {
+    padding-left: 0px;
+}
+
+.nav-item.last {
+    padding-right: 0px;
 }
 
 .nav-item.active {
@@ -156,21 +182,4 @@ img.social-icon {
     padding-right: 5px;
     height: 24px;
     width: 24px;
-}
-
-a {
-    text-decoration: none;
-    color: #4a2db3;
-}
-
-a:visited {
-    color: #3c219b;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    color: #6344ff;
 }
