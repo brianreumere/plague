@@ -1,4 +1,4 @@
-{{ range .Site.Params.IndieWeb.Social }}
+{{ range .Site.Params.Hcard.Social }}
 {{ $href := "" }}
 {{ if eq .platform "email" }}{{ $href = (printf "%s%v" "mailto:" .identity) }}{{ end }}
 {{ if eq .platform "facebook" }}{{ $href = (printf "%s%v" "https://www.facbook.com/" .identity) }}{{ end }}

@@ -16,7 +16,7 @@ The [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) from [Web
 
 ## Hugo shortcodes
 
-There is a Hugo shortcode implemented to display a paragraph of text with a custom class name `callout` and [ARIA `note` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/note_role). You can use this instead of the `> ` Markdown blockquote syntax, since technically blockquotes are supposed to be actual quotations and not notes, call-outs, alerts, etc. (the `<aside>` tag also doesn't seem appropriate for this use case since it's intended to be for content that ["could be considered separate [from the content around the `aside` element](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-aside-element.html)).
+There is a Hugo shortcode implemented to display a paragraph of text with a custom class name `callout` and [ARIA `note` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/note_role). You can use this instead of the `> `  Markdown blockquote syntax, since technically blockquotes are supposed to be actual quotations and not notes, call-outs, alerts, etc. (the `<aside>` tag also doesn't seem appropriate for this use case since it's intended to be for content that ["could be considered separate \[from the content around the `aside` element\]](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-aside-element.html)).
 
 For example:
 
@@ -42,10 +42,10 @@ title = "example.com"
 theme = "plague"
 
 [params]
-  siteHeaderText = "My Website Name"
+  siteHeaderText = "some website"
   showHcard = true
 
-  [params.indieWeb]
+  [params.hcard]
     fullName = "some name"
 ```
 
@@ -59,7 +59,7 @@ title = "example.com"
 theme = "plague"
 
 [params]
-  siteHeaderText = "My Website Name"
+  siteHeaderText = "some website"
 ```
 
 ## IndieWeb
@@ -73,7 +73,7 @@ With `showHcard = true`, you can configure multiple additional values in `config
   siteHeaderText = "My Website Name"
   showHcard = true
 
-  [params.indieWeb]
+  [params.hcard]
     avatar = "images/me.jpg"
     fullName = "some name"
     pronouns = [ "they", "them", "theirs" ]
