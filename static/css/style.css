@@ -112,8 +112,8 @@ blockquote {
     border-left: 10px solid #404040;
     border-radius: 5px;
     font-size: 14px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 140px;
 }
 
 blockquote p {
@@ -130,6 +130,13 @@ p.callout {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 14px;
+}
+
+hr {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40px;
 }
 
 footer {
