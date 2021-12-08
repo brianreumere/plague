@@ -4,7 +4,7 @@
 {{ if eq .Platform "github" }}{{ $href = (printf "%s%v" "https://github.com/" .Identity) }}{{ end }}
 {{ if eq .Platform "twitter" }}{{ $href = (printf "%s%v" "https://twitter.com/" .Identity) }}{{ end }}
 <b>{{ . }}</b>
-<b>{{ .Platform }}</b>
-<b>{{ .Identity }}</b>
+<b>{{ .platform }}</b>
+<b>{{ .identity }}</b>
 <a class="u-url" rel="me" href="{{ $href }}"><img class="social-icon" alt="{{ .Platform }}" src="{{ (printf "%s%v%s" "icons/" .Platform ".svg") | absURL }}"></a>
 {{ end }}
