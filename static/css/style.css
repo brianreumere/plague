@@ -65,16 +65,16 @@ a:active {
 
 .nav-item {
     text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .nav-item.first {
-    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .nav-item.last {
-    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .nav-item.active {
