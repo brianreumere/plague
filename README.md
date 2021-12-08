@@ -66,7 +66,7 @@ theme = "plague"
 
 ### h-card
 
-With `showHcard = true`, you can configure multiple additional values in `config.toml` to populate your h-card. With the exception of `fullName`, these are all optional:
+With `showHcard = true`, you can configure multiple additional values in `config.toml` to populate your h-card. With the exception of `fullName`, everything is optional. The order of values in the `social` array determines the order of the social icons displayed in the footer.
 
 ```
 [params]
@@ -75,23 +75,38 @@ With `showHcard = true`, you can configure multiple additional values in `config
 
   [params.indieWeb]
     avatar = "images/me.jpg"
-    fullName = "someone"
+    fullName = "some name"
     pronouns = [ "they", "them", "theirs" ]
-    nickname = "something"
+    nickname = "some nickname"
     showLocation = true
-    city = "somewhere"
-    region = "somewhere"
-    country = "somewhere"
-    emailAddress = "someone@example.com"
-    gitHubUsername = "something"
-    twitterHandle = "something"
+    city = "some city"
+    region = "some region/state/province"
+    country = "some country"
+
+    social = [
+      { platform = "email", identity = "someone@example.com" },
+      { platform = "facebook", identity = "some facebook username" },
+      { platform = "flickr", identity = "some flickr username" },
+      { platform = "github", identity = "some github username" },
+      { platform = "gitlab", identity = "some gitlab username" },
+      { platform = "glitch", identity = "some glitch username" },
+      { platform = "instagram", identity = "some instagram username" },
+      { platform = "keybase", identity = "some keybase username" },
+      { platform = "linkedin", identity = "some linkedin username" },
+      { platform = "medium", identity = "some medium username" },
+      { platform = "microblog", identity = "some micro.blog username" },
+      { platform = "reddit", identity = "some reddit username" },
+      { platform = "stackoverflow", identity = "12345678/some stackoverflow username" },
+      { platform = "tumblr", identity = "some tumblr username" },
+      { platform = "twitter", identity = "some twitter username" }
+    ]
 ```
 
 See [The Pronouns in my h-card](https://wiki.zegnat.net/microformats/pronoun) regarding the `pronoun` h-card property.
 
 `showLocation` can be set to false or deleted (along with `city`, `region`, and `country`) to not include any location info in your h-card.
 
-The format of the h-card is in `layouts/partials/hcard.html`. If you want to customize the format, you can create a custom partial template at `layouts/partials/hcard.html` in your Hugo site directory.
+The format of the theme's default h-card is in `layouts/partials/hcard.html`. If you want to customize the format, you can create a custom partial template at `layouts/partials/hcard.html` in your Hugo site directory.
 
 The social icons are also part of the h-card, and their links will have the `rel="me"` attribute included.
 
