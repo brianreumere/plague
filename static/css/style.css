@@ -38,11 +38,11 @@ p {
 
 a {
     text-decoration: none;
-    color: #4a2db3;
+    color: #593bce;
 }
 
 a:visited {
-    color: #3c219b;
+    color: #4a2fb6;
 }
 
 a:hover {
@@ -50,7 +50,7 @@ a:hover {
 }
 
 a:active {
-    color: #6344ff;
+    color: #000000;
 }
 
 .site-header {
@@ -125,7 +125,7 @@ pre {
 }
 
 pre:focus {
-    border: 4px solid #6344FF;
+    border: 4px solid #593bce;
     border-radius: 5px;
 }
 
@@ -144,7 +144,7 @@ blockquote p {
 
 p.callout {
     background-color: #e6e6ff;
-    border-left: 10px solid #4747d1;
+    border-left: 10px solid #593bce;
     border-radius: 5px;
     padding: 10px;
     padding-left: 15px;
