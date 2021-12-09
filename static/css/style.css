@@ -12,12 +12,6 @@
 .site-content {
     background: var(--background-color);
     color: var(--text-color);
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -28,6 +22,12 @@ body {
     margin-bottom: 0;
     padding-right: 30px;
     padding-left: 30px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {

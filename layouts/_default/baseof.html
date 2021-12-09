@@ -3,6 +3,7 @@
     {{ partial "head.html" . }}
     <body>
         <input id="dark-light-mode" type="checkbox" name="dark-light-mode">
+        <div class="dark-light-mode-wrapper">
         <div class="site-content">
             <header>
                 {{ partial "header.html" . }}
@@ -13,6 +14,7 @@
             <footer>
                 {{- partial "footer.html" . -}}
             </footer>
+        </div>
         </div>
     </body>
 </html>
