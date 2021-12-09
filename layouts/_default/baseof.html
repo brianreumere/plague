@@ -2,7 +2,9 @@
 <html lang="{{ .Site.Language.Lang }}">
     {{ partial "head.html" . }}
     <body>
-        <input id="dark-light-mode" type="checkbox" name="dark-light-mode">
+        <div class="dark-light-mode-toggle">
+            <input id="dark-light-mode" type="checkbox" name="dark-light-mode"> Read in dark mode
+        </div>
         <div class="dark-light-mode-wrapper">
         <div class="site-content">
             <header>
