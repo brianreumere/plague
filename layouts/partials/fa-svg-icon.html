@@ -4,4 +4,4 @@
 {{- $svg_old := "viewBox=\"0 0 512 512\">" -}}
 {{- $svg_new := "viewBox=\"0 0 512 512\" aria-labelledby=\"icon-title\" role=\"img\">" -}}
 {{- $fill := replace (readFile $filename) $path_old $path_new -}}
-{{ replace $fill $svg_old $svg_new | safeHTML }}
+{{- replace $fill $svg_old $svg_new | safeHTML -}}
