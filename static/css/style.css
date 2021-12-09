@@ -4,14 +4,17 @@
     --main-theme-color: #4343d0;
 }
 
-#dark-light-mode:checked ~ .site-content {
+#dark-light-mode:checked ~ .dark-light-mode-wrapper {
 	--background-color: #000000;
 	--text-color: #ffffff;
 }
 
-.site-content {
+.dark-light-mode-wrapper {
     background: var(--background-color);
     color: var(--text-color);
+}
+
+.site-content {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
