@@ -5,6 +5,16 @@
     --light-theme-color: #595959;
 }
 
+@media (prefers-color-scheme: dark) {
+    .day.dark-scheme   { background:  #333; color: white; }
+    .night.dark-scheme { background: black; color:  #ddd; }
+}
+  
+@media (prefers-color-scheme: light) {
+    .day.light-scheme   { background: white; color:  #555; }
+    .night.light-scheme { background:  #eee; color: black; }
+}
+
 #dark-light-mode:checked ~ .dark-light-mode-wrapper {
 	--background-color: #000000;
 	--text-color: #ffffff;
