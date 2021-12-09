@@ -5,7 +5,7 @@ name = "plague"
 license = "MIT"
 
 licenselink = "https://github.com/brianreumere/plague/blob/main/LICENSE"
-description = "Minima-inspired theme with IndieWeb stuff"
+description = "A minimal Hugo theme with microformats"
 homepage = "https://github.com/brianreumere/plague"
 tags = ["blog", "minimal"]
 features = ["blog"]

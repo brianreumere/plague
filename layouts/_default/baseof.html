@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-    {{- partial "head.html" . -}}
+    {{ partial "head.html" . }}
     <body>
-        <header>{{- partial "header.html" . -}}</header>
-        <main class="content">
-        {{- block "main" . }}{{- end }}
-        </main>
-        <footer>{{- partial "footer.html" . -}}</footer>
+        <input id="dark-light-mode" type="checkbox" name="dark-light-mode" style="display:none;">
+        <div class="dark-light-mode-wrapper">
+        <div class="site-content">
+            <header>
+                {{ partial "header.html" . }}
+            </header>
+            <main class="content">
+                {{ block "main" . }}{{ end }}
+            </main>
+            <footer>
+                {{- partial "footer.html" . -}}
+            </footer>
+        </div>
+        </div>
     </body>
 </html>
