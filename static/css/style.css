@@ -1,5 +1,17 @@
 :root {
-    --main-color: #4343d0;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --main-theme-color: #4343d0;
+}
+
+#dark-mode:checked ~ .site-content {
+	--background-color: #000000;
+	--text-color: #ffffff;
+}
+
+.site-content {
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 body {
@@ -9,7 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ffffff;
     max-width: 740px;
     margin-right: auto;
     margin-left: auto;
@@ -17,7 +28,6 @@ body {
     margin-bottom: 0;
     padding-right: 30px;
     padding-left: 30px;
-    color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
