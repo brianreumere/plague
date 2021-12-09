@@ -4,7 +4,7 @@
     --main-theme-color: #4343d0;
 }
 
-#dark-mode:checked ~ .site-content {
+#dark-light-mode:checked ~ .site-content {
 	--background-color: #000000;
 	--text-color: #ffffff;
 }
@@ -52,7 +52,7 @@ p {
 
 a {
     text-decoration: underline;
-    color: var(--main-color);
+    color: var(--main-theme-color);
 }
 
 a:active {
@@ -132,7 +132,7 @@ pre {
 }
 
 pre:focus {
-    border: 4px solid var(--main-color);
+    border: 4px solid var(--main-theme-color);
     border-radius: 5px;
 }
 
@@ -151,7 +151,7 @@ blockquote p {
 
 p.callout {
     background-color: #e6e6ff;
-    border-left: 10px solid var(--main-color);
+    border-left: 10px solid var(--main-theme-color);
     border-radius: 5px;
     padding: 10px;
     padding-left: 15px;
