@@ -1,8 +1,9 @@
 :root {
     --background-color: #ffffff;
     --text-color: #000000;
+    --light-text-color: #595959;
     --main-theme-color: #4343d0;
-    --light-theme-color: #595959;
+    --social-icon-color: #444444;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -131,7 +132,7 @@ a.nav-item:hover {
 }
 
 .post-date {
-    color: var(--light-theme-color);
+    color: var(--light-text-color);
     font-size: 14px;
 }
 
@@ -184,7 +185,7 @@ p.callout {
 }
 
 hr {
-    border: 1px solid var(--light-theme-color);
+    border: 1px solid var(--light-text-color);
     border-radius: 1px;
     margin-left: 0px;
     margin-top: 20px;
@@ -194,7 +195,7 @@ hr {
 
 footer {
     margin-bottom: 15px;
-    color: var(--light-theme-color);
+    color: var(--light-text-color);
     font-size: 14px;
 }
 
@@ -206,6 +207,7 @@ img.u-photo {
 
 .social-icon {
     display: inline-block;
+    color: var(--social-icon-color)
     padding-left: 5px;
     padding-right: 5px;
     height: 24px;
