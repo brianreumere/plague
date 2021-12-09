@@ -207,7 +207,7 @@ img.u-photo {
 
 .social-icon {
     display: inline-block;
-    color: var(--social-icon-color)
+    color: var(--social-icon-color);
     padding-left: 5px;
     padding-right: 5px;
     height: 24px;
