@@ -214,6 +214,13 @@ img.u-photo {
     width: 24px;
 }
 
+.inline-icon {
+    display: inline-block;
+    color: var(--text-color);
+    height: 1em;
+    width: 1em;
+}
+
 img.dark-light-mode-icon {
     height: 24px;
     width: 24px;
