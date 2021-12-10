@@ -219,6 +219,8 @@ img.u-photo {
     color: var(--text-color);
     height: 1em;
     width: 1em;
+    position: relative;
+    top: 0.125em;
 }
 
 img.dark-light-mode-icon {

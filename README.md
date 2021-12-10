@@ -18,6 +18,8 @@ The [Accessible SVG test page](https://weboverhauls.github.io/demos/svg/), [Maki
 
 ## Hugo shortcodes
 
+### Callout
+
 There is a Hugo shortcode implemented to display a paragraph of text with a custom class name `callout` and [ARIA `note` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/note_role). You can use this instead of the `> `  Markdown blockquote syntax, since technically blockquotes are supposed to be actual quotations and not notes, call-outs, alerts, etc. (the `<aside>` tag also doesn't seem appropriate for this use case since it's intended to be for content that ["could be considered separate \[from the content around the `aside` element\]](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-aside-element.html)).
 
 For example:
@@ -29,6 +31,14 @@ Make sure to do some stuff! This is important to read.
 ```
 
 I might add additional shortcodes for differently colored callouts in the future.
+
+### Font Awesome icon
+
+If you download an SVG icon from Font Awesome and place it in the `font-awesome-icons` directory at the root of your Hugo site repo (**not** in the `content` or `static` directories), you can use it inline with your Markdown content by using the `fa` shortcode. The first parameter is the name of the icon file (without the `.svg` file extension) and the second parameter is the `title` (equivalent to alt text) that is added to the icon.
+
+```
+{{< fa "github" "" >}}
+```
 
 ## Minimum config requirements
 
