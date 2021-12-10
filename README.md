@@ -68,6 +68,8 @@ theme = "plague"
 
 With `showHcard = true`, you can configure multiple additional values in `config.toml` to populate your h-card. With the exception of `fullName`, everything is optional. The order of values in the `social` array determines the order of the social icons displayed in the footer.
 
+For any social icons you would like to display, you should put a `font-awesome-icons` directory in the root of your Hugo site directory that contains SVG icons. The icon filenames should match `<platform>.svg`, where platform is the value you specify in `config.toml` (see example below). You can download icons from [Font-Awesome here](https://github.com/FortAwesome/Font-Awesome/tree/master/svgs). The social platforms specified below are just examples; you can add any custom ones you want as long as there is an icon file available.
+
 ```
 [params]
   siteHeaderText = "My Website Name"
@@ -84,21 +86,14 @@ With `showHcard = true`, you can configure multiple additional values in `config
     country = "some country"
 
     social = [
-      { platform = "email", identity = "someone@example.com" },
-      { platform = "facebook", identity = "some facebook username" },
-      { platform = "flickr", identity = "some flickr username" },
-      { platform = "github", identity = "some github username" },
-      { platform = "gitlab", identity = "some gitlab username" },
-      { platform = "glitch", identity = "some glitch username" },
-      { platform = "instagram", identity = "some instagram username" },
-      { platform = "keybase", identity = "some keybase username" },
-      { platform = "linkedin", identity = "some linkedin username" },
-      { platform = "medium", identity = "some medium username" },
-      { platform = "microblog", identity = "some micro.blog username" },
-      { platform = "reddit", identity = "some reddit username" },
-      { platform = "stackoverflow", identity = "12345678/some stackoverflow username" },
-      { platform = "tumblr", identity = "some tumblr username" },
-      { platform = "twitter", identity = "some twitter username" }
+      { platform = "email", identity = "someone@example.com", url_pattern = "mailto:%s" },
+      { platform = "flickr", identity = "some flickr username", url_pattern = "https://www.flickr.com/people/%s" },
+      { platform = "github", identity = "some github username", url_pattern = "https://github.com/%s" },
+      { platform = "gitlab", identity = "some gitlab username", url_pattern = "https://gitlab.com/%s" },
+      { platform = "glitch", identity = "some glitch username", url_pattern = "https://glitch.com/@%s" },
+      { platform = "microblog", identity = "some micro.blog username", url_pattern = "https://micro.blog/%s" },
+      { platform = "tumblr", identity = "some tumblr username", url_pattern = "https://%s.tumblr.com" },
+      { platform = "twitter", identity = "some twitter username", url_pattern = "https://twitter.com/%s" }
     ]
 ```
 
@@ -181,7 +176,3 @@ menu:
 
 [email](mailto:someone@example.com)
 ```
-
-## Sublicenses
-
-The social icons are from the [Indigo theme](https://github.com/AngeloStavrow/indigo) by [AngeloStavrow](https://github.com/AngeloStavrow). [The MIT license for these is included here](LICENSE.indigo).
