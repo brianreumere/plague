@@ -34,10 +34,10 @@ I might add additional shortcodes for differently colored callouts in the future
 
 ### Font Awesome icon
 
-If you download an SVG icon from Font Awesome and place it in the `font-awesome-icons` directory at the root of your Hugo site repo (**not** in the `content` or `static` directories), you can use it inline with your Markdown content by using the `fa` shortcode. The first parameter is the name of the icon file (without the `.svg` file extension) and the second parameter is the `title` (equivalent to alt text) that is added to the icon.
+If you download an SVG icon from Font Awesome and place it in the `font-awesome-icons` directory at the root of your Hugo site repo (**not** in the `content` or `static` directories), you can use it inline with your Markdown content by using the `fa` shortcode. The first parameter is the name of the icon file (without the `.svg` file extension) and the second parameter is the `title` (equivalent to alt text) that is added to the icon. If you do not specify a title (for purely decorative icons that are inline with other text, it's probably best to not specify a title), the SVG will have the `aria-hidden="true"` attribute added so it [isn't included in the accessibility tree](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute).
 
 ```
-{{< fa "github" "" >}}
+{{< fa "github" >}}
 ```
 
 ## Minimum config requirements
