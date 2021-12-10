@@ -10,5 +10,3 @@
 {{- $path_new := "<path fill=\"currentColor\"" -}}
 {{- $svg_new := "<svg aria-hidden=\"true\"" }}
 {{- end -}}
-{{- $fill := replace (readFile $filename) $path_old $path_new -}}
-{{- replace $fill $svg_old $svg_new | safeHTML -}}
