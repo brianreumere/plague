@@ -59,7 +59,7 @@ a:active {
 }
 
 .site-header, .site-header:visited, .site-header:hover {
-    color: var(--header-link-color);
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -69,6 +69,7 @@ a:active {
 }
 
 .nav-item {
+    color: var(--nav-item-link-color)
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
