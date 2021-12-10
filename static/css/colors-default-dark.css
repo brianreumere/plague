@@ -2,6 +2,18 @@
     --background-color: #000000;
     --text-color: #ffffff;
     --light-text-color: #d6d6d6;
-    --main-theme-color: #9a9ae5;
+    --hr-color: #d6d6d6;
+    --link-color: #9a9ae5;
+    --active-link-color: #ffffff;
+    --nav-item-link-color: #9a9ae5;
+    --selection-highlight-color: #9a9ae5;
+    --preformatted-background-color: #444444;
+    --preformatted-text-color: #ffffff;
+    --callout-background-color: #4343d0;
+    --callout-text-color: #ffffff;
+    --callout-highlight-color: #282885;
+    --blockquote-background-color: #4343d0;
+    --blockquote-text-color: #ffffff;
+    --blockquote-highlight-color: #282885;
     --social-icon-color: #a8a8a8;
 }
