@@ -12,6 +12,8 @@
 }
 
 body {
+    background: var(--background-color);
+    color: var(--text-color);
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -45,7 +47,7 @@ a {
 }
 
 a:active {
-    color: #212187;
+    color: var(--main-theme-color);
 }
 
 .site-header {
@@ -126,8 +128,8 @@ pre:focus {
 }
 
 blockquote {
-    background-color: #f0f0f0;
-    border-left: 10px solid #404040;
+    background-color: var(--main-theme-color);
+    border-left: 10px solid var(--light-text-color);
     border-radius: 5px;
     font-size: 14px;
     margin-left: 40px;
@@ -139,7 +141,7 @@ blockquote p {
 }
 
 p.callout {
-    background-color: #e6e6ff;
+    background-color: var(--light-text-color);
     border-left: 10px solid var(--main-theme-color);
     border-radius: 5px;
     padding: 10px;
