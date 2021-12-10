@@ -14,6 +14,8 @@ I'm not super familiar with web accessibility, but this theme does aim to be acc
 
 The [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) from [Web Accessibility in Mind (WebAIM)](https://webaim.org/) and the [MDN Accessibility documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility) were helpful to get to an initial baseline of accessibility. I'd also encourage you to read about writing accessible Markdown and documentation in general (some things I read are [Improving The Accessibility Of Your Markdown](https://www.smashingmagazine.com/2021/09/improving-accessibility-of-markdown/), [Writing accessible documentation](https://developers.google.com/style/accessibility), and [Alternative Text](https://webaim.org/techniques/alttext/)).
 
+The [Accessible SVG test page](https://weboverhauls.github.io/demos/svg/), [Making SVG Accessible](https://decks.tink.uk/2017/lws/index.html), [Introduction to ARIA - Accessible Rich Internet Applications](https://webaim.org/techniques/aria/), and [Using Font Awesome Icons in Hugo](https://www.client9.com/using-font-awesome-icons-in-hugo/) were helpful for the code in `partials/fa-svg-icon.html` that adds a `title` and `aria-labelledby` attribute to SVG icons from Font Awesome.
+
 ## Hugo shortcodes
 
 There is a Hugo shortcode implemented to display a paragraph of text with a custom class name `callout` and [ARIA `note` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/note_role). You can use this instead of the `> `  Markdown blockquote syntax, since technically blockquotes are supposed to be actual quotations and not notes, call-outs, alerts, etc. (the `<aside>` tag also doesn't seem appropriate for this use case since it's intended to be for content that ["could be considered separate \[from the content around the `aside` element\]](https://www.w3.org/TR/2011/WD-html5-author-20110809/the-aside-element.html)).
@@ -68,7 +70,7 @@ theme = "plague"
 
 With `showHcard = true`, you can configure multiple additional values in `config.toml` to populate your h-card. With the exception of `fullName`, everything is optional. The order of values in the `social` array determines the order of the social icons displayed in the footer.
 
-For any social icons you would like to display, you should put a `font-awesome-icons` directory in the root of your Hugo site directory that contains SVG icons. The icon filenames should match `<platform>.svg`, where platform is the value you specify in `config.toml` (see example below). You can download icons from [Font-Awesome here](https://github.com/FortAwesome/Font-Awesome/tree/master/svgs). The social platforms specified below are just examples; you can add any custom ones you want as long as there is an icon file available.
+For any social icons you would like to display, you should put a `font-awesome-icons` directory in the root of your Hugo site directory that contains SVG icon files. The icon filenames should match `<platform>.svg`, where `<platform>` is a value you specify in `config.toml` (see example below). [You can download icons from Font Awesome here](https://github.com/FortAwesome/Font-Awesome/tree/master/svgs). The social platforms specified below are just examples; you can add any custom ones you want as long as there is an icon file available and you write a `url_pattern` that inclues `%s` to specify where your username/handle/identity should be substituted.
 
 ```
 [params]
