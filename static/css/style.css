@@ -142,7 +142,7 @@ blockquote p {
 
 p.callout {
     background-color: var(--callout-background-color);
-    border-left: 10px solid var(--callout-text-color);
+    border-left: 10px solid var(--callout-highlight-color);
     border-radius: 5px;
     padding: 10px;
     padding-left: 15px;
