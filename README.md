@@ -14,7 +14,7 @@ I'm not super familiar with web accessibility, but this theme does aim to be acc
 
 The [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) from [Web Accessibility in Mind (WebAIM)](https://webaim.org/) and the [MDN Accessibility documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility) were helpful to get to an initial baseline of accessibility. I'd also encourage you to read about writing accessible Markdown and documentation in general (some things I read are [Improving The Accessibility Of Your Markdown](https://www.smashingmagazine.com/2021/09/improving-accessibility-of-markdown/), [Writing accessible documentation](https://developers.google.com/style/accessibility), and [Alternative Text](https://webaim.org/techniques/alttext/)).
 
-The [Accessible SVG test page](https://weboverhauls.github.io/demos/svg/), [Making SVG Accessible](https://decks.tink.uk/2017/lws/index.html), [Introduction to ARIA - Accessible Rich Internet Applications](https://webaim.org/techniques/aria/), and [Using Font Awesome Icons in Hugo](https://www.client9.com/using-font-awesome-icons-in-hugo/) were helpful for the code in `partials/fa-svg-icon.html` that adds a `title` and `aria-labelledby` attribute to SVG icons from Font Awesome.
+The [Accessible SVG test page](https://weboverhauls.github.io/demos/svg/), [Making SVG Accessible](https://decks.tink.uk/2017/lws/index.html), [Introduction to ARIA - Accessible Rich Internet Applications](https://webaim.org/techniques/aria/), and [Using Font Awesome Icons in Hugo](https://www.client9.com/using-font-awesome-icons-in-hugo/) were helpful re: SVGs.
 
 ## Hugo shortcodes
 
@@ -34,7 +34,7 @@ I might add additional shortcodes for differently colored callouts in the future
 
 ### Font Awesome icon
 
-If you download an SVG icon from Font Awesome and place it in the `font-awesome-icons` directory at the root of your Hugo site repo (**not** in the `content` or `static` directories), you can use it inline with your Markdown content by using the `fa` shortcode. The first parameter is the name of the icon file (without the `.svg` file extension) and the second parameter is the `title` (equivalent to alt text) that is added to the icon. If you do not specify a title (for purely decorative icons that are inline with other text, it's probably best to not specify a title), the SVG will have the `aria-hidden="true"` attribute added so it [isn't included in the accessibility tree](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute).
+If you download an SVG icon from Font Awesome and place it in the `font-awesome-icons` directory at the root of your Hugo site repo (**not** in the `content` or `static` directories), you can use it inline with your Markdown content by using the `fa` shortcode. The parameter is the name of the icon file (without the `.svg` file extension). The SVG will have the `aria-hidden="true"` attribute added so it [isn't included in the accessibility tree](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute), so do not use it for any interactive functionality; it should be purely decorative.
 
 ```
 {{< fa "github" >}}

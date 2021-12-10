@@ -2,6 +2,18 @@
     --background-color: #ffffff;
     --text-color: #000000;
     --light-text-color: #595959;
-    --main-theme-color: #4343d0;
+    --hr-color: #595959;
+    --link-color: #4343d0;
+    --active-link-color: #000000;
+    --header-link-color: #4343d0;
+    --selection-highlight-color: #4343d0;
+    --preformatted-background-color: #000000;
+    --preformatted-text-color: #ffffff;
+    --callout-background-color: #7c7cfc;
+    --callout-text-color: #000000;
+    --callout-highlight-color: #4343d0;
+    --blockquote-background-color: #aaaaaa;
+    --blockquote-text-color: #000000;
+    --blockquote-highlight-color: #444444;
     --social-icon-color: #444444;
 }
