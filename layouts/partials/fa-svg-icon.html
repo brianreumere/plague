@@ -5,7 +5,7 @@
 {{ .filename }}
 {{- with .title -}}
 "new"
-{{- $path_new := (printf "<title id=\"icon-title\">%s</title><path fill=\"currentColor\"" .title) -}}
+{{- $path_new := (printf "<title id=\"icon-title\">%s</title><path fill=\"currentColor\"" .) -}}
 {{- $svg_new := "<svg aria-labelledby=\"icon-title\" role=\"img\"" }}
 {{- else -}}
 "else"
