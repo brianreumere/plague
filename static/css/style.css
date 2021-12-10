@@ -69,7 +69,7 @@ a:active {
 }
 
 .nav-item {
-    color: var(--nav-item-link-color)
+    color: var(--nav-item-link-color);
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
