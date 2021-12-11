@@ -2,7 +2,7 @@
 {{ range .Paginator.Pages }}
 <p>
     <span class="post-date"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date | time.Format ":date_long" }}</time></span><br>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+    <span class="post-link"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span><br>
 </p>
 {{ end }}
 {{ end }}
