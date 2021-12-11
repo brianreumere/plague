@@ -1,9 +1,7 @@
-{{ if .Site.Params.ShowHcard }}
 <div class="footer-container">
     <div class="h-card bio">
         {{- partial "hcard.html" . -}}
     </div>
-    {{- end -}}
     {{- with .Site.Params.SiteFooterText -}}
     <div class="footer-text footer-right">
         <p>

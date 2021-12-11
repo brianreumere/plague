@@ -55,37 +55,22 @@ theme = "plague"
 
 [params]
   siteHeaderText = "some website"
-  showHcard = true
 
   [params.hcard]
     fullName = "some name"
-```
-
-Without h-card:
-
-```
-baseURL = "https://example.com"
-languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "example.com"
-theme = "plague"
-
-[params]
-  siteHeaderText = "some website"
 ```
 
 ## IndieWeb
 
 ### h-card
 
-With `showHcard = true`, you can configure multiple additional values in `config.toml` to populate your h-card. With the exception of `fullName`, everything is optional. The order of values in the `social` array determines the order of the social icons displayed in the footer.
+You can configure multiple additional values in `config.toml` to populate your h-card. With the exception of `fullName`, everything is optional. The order of values in the `social` array determines the order of the social icons displayed in the footer.
 
 For any social icons you would like to display, you should put a `font-awesome-icons` directory in the root of your Hugo site directory that contains SVG icon files. The icon filenames should match `<platform>.svg`, where `<platform>` is a value you specify in `config.toml` (see example below). [You can download icons from Font Awesome here](https://github.com/FortAwesome/Font-Awesome/tree/master/svgs). The social platforms specified below are just examples; you can add any custom ones you want as long as there is an icon file available and you write a `url_pattern` that inclues `%s` to specify where your username/handle/identity should be substituted.
 
 ```
 [params]
   siteHeaderText = "My Website Name"
-  showHcard = true
 
   [params.hcard]
     avatar = "images/me.jpg"
