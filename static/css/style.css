@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 2.6em;
     line-height: 1;
     letter-spacing: -1px;
 }
@@ -108,7 +108,7 @@ a.nav-item:hover {
 }
 
 .post-link {
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 .http-error {
