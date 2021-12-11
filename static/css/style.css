@@ -177,12 +177,12 @@ footer {
 }
 
 .footer-left {
-    width: calc(100% - (30px / 2));
+    width: calc(50% - (30px / 2));
     padding-right: 15px;
 }
 
 .footer-right {
-    width: calc(100% - (30px / 2));
+    width: calc(50% - (30px / 2));
     padding-left: 15px;
 }
 
@@ -190,6 +190,10 @@ img.u-photo {
     vertical-align: bottom;
     height: 1.5em;
     border-radius: 25%;
+}
+
+.h-card-social {
+    text-align: center;
 }
 
 .social-icon {
