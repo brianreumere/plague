@@ -177,14 +177,12 @@ footer {
 }
 
 .h-card-bio {
-    width: calc(50% - (30px / 2));
-    min-width: calc(50% - (30px / 2));
+    width: 355px;
     padding-right: 15px;
 }
 
 .footer-right {
-    width: calc(50% - (30px / 2));
-    min-width: calc(50% - (30px / 2));
+    width: 355px;
     padding-left: 15px;
 }
 
