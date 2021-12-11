@@ -86,7 +86,6 @@ a:active {
 }
 
 .nav-item.active {
-    color: var(--text-color);
     border-bottom: 2px solid var(--nav-item-active-color);
 }
 
