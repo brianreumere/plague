@@ -170,6 +170,11 @@ footer {
     font-size: 14px;
 }
 
+.footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 img.u-photo {
     vertical-align: bottom;
     height: 1.5em;
