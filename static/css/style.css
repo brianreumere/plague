@@ -176,13 +176,15 @@ footer {
     flex-wrap: wrap;
 }
 
-.footer-left {
+.h-card-bio {
     width: calc(50% - (30px / 2));
+    min-width: calc(50% - (30px / 2));
     padding-right: 15px;
 }
 
 .footer-right {
     width: calc(50% - (30px / 2));
+    min-width: calc(50% - (30px / 2));
     padding-left: 15px;
 }
 
