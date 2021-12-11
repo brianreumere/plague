@@ -6,7 +6,9 @@
     {{- end -}}
     {{- with .Site.Params.SiteFooterText -}}
     <div class="footer-text footer-right">
-        {{ . | markdownify }}
+        <p>
+            {{ . | markdownify }}
+        </p>
     </div>
     {{- end -}}
 </div>
