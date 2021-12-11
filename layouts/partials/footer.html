@@ -1,6 +1,6 @@
 {{ if .Site.Params.ShowHcard }}
 <div class="footer-container">
-    <div class="h-card-bio">
+    <div class="h-card bio">
         {{- partial "hcard.html" . -}}
     </div>
     {{- end -}}
@@ -12,10 +12,7 @@
     </div>
     {{- end -}}
 </div>
-<div class="social-icons">
-    <div class="h-card">
-        <div class="h-card-social">
-            {{ partial "social.html" . -}}
-        </div>
-    </div>
+<div class="h-card social">
+    {{ partial "social.html" . -}}
+</div>
 </div>

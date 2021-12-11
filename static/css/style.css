@@ -182,7 +182,7 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
-    .h-card-bio {
+    .h-card.bio {
         width: 355px;
         padding-right: 15px;
         margin-bottom: 1em;
@@ -200,7 +200,7 @@ img.u-photo {
     border-radius: 25%;
 }
 
-.h-card-social {
+.h-card.social {
     margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
