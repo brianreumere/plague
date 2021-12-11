@@ -184,7 +184,7 @@ footer {
     margin-bottom: 1em;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 740px) {
     .h-card-bio {
         width: 355px;
         padding-right: 15px;
