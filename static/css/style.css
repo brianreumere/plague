@@ -177,15 +177,22 @@ footer {
 }
 
 .h-card-bio {
-    width: 355px;
-    padding-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .footer-right {
-    width: 355px;
-    padding-left: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    .h-card-bio {
+        width: 355px;
+        padding-right: 15px;
+    }
+    .footer-right {
+        width: 355px;
+        padding-left: 15px;
+    }
 }
 
 img.u-photo {
