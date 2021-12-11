@@ -1,0 +1,19 @@
+:root {
+    --background-color: #050300;
+    --text-color: #f7f7f7;
+    --light-text-color: #cccccc;
+    --hr-color: #43ad94;
+    --link-color: #ad88db;
+    --active-link-color: #000000;
+    --nav-item-link-color: #43ad94;
+    --selection-highlight-color: #ad88db;
+    --preformatted-background-color: #362a18;
+    --preformatted-text-color: #dedede;
+    --callout-background-color: #674493;
+    --callout-text-color: #fafafa;
+    --callout-highlight-color: #995ee0;
+    --blockquote-background-color: #674493;
+    --blockquote-text-color: #fafafa;
+    --blockquote-highlight-color: #995ee0;
+    --social-icon-color: #43ad94;
+}
