@@ -176,22 +176,16 @@ footer {
     flex-wrap: wrap;
 }
 
-.h-card-bio {
-    margin-bottom: 1em;
-}
-
-.footer-right {
-    margin-bottom: 1em;
-}
-
 @media screen and (min-width: 800px) {
     .h-card-bio {
         width: 355px;
         padding-right: 15px;
+        margin-bottom: 1em;
     }
     .footer-right {
         width: 355px;
         padding-left: 15px;
+        margin-bottom: 1em;
     }
 }
 
