@@ -176,6 +176,11 @@ footer {
     flex-wrap: wrap;
 }
 
+.footer-container p {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
 @media screen and (min-width: 800px) {
     .h-card-bio {
         width: 355px;
@@ -196,6 +201,7 @@ img.u-photo {
 }
 
 .h-card-social {
+    margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
 }
