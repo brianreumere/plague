@@ -44,8 +44,6 @@ If you download an SVG icon from Font Awesome and place it in the `font-awesome-
 
 These are the minimum required settings in your site's `config.toml` file for this theme to function.
 
-With [h-card](https://microformats.org/wiki/h-card):
-
 ```
 baseURL = "https://example.com"
 languageCode = "en-us"
@@ -110,7 +108,7 @@ The `fullName` and `avatar` (if it exists) properties are used on pages that use
 
 ### Additional footer text
 
-This will render below the h-card. Markdown is supported. For example:
+This will render in the right-hand footer column, next to the h-card. Markdown is supported. For example:
 
 ```
 [params]
