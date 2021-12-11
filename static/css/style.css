@@ -176,6 +176,16 @@ footer {
     flex-wrap: wrap;
 }
 
+.footer-left {
+    width: calc(100% - (30px / 2));
+    padding-right: 15px;
+}
+
+.footer-right {
+    width: calc(100% - (30px / 2));
+    padding-left: 15px;
+}
+
 img.u-photo {
     vertical-align: bottom;
     height: 1.5em;
