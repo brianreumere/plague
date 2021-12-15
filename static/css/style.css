@@ -72,6 +72,11 @@ a:active {
     display: none;
 }
 
+.site-nav input ~ .trigger {
+    clear:both;
+    display:none
+}
+
 .site-nav label[for="nav-trigger"] {
     display:block;
     float:right;
