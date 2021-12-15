@@ -73,7 +73,7 @@ a:active {
     text-align:right;
 }
 
-.site-nav .nav-trigger {
+.nav-trigger {
     display: none;
 }
 
@@ -96,7 +96,12 @@ a:active {
     cursor:pointer;
 }
 
-.site-nav .menu-icon path {
+.menu-icon {
+    height: 54px;
+    width: 54px;
+}
+
+.menu-icon path {
     fill: var(--text-color);
 }
 
@@ -110,13 +115,13 @@ a:active {
     .site-nav label[for="nav-trigger"] {
     display:none;
    }
-   .site-nav .menu-icon {
+   .menu-icon {
     display:none;
    }
    .site-nav input ~ .nav-menu-trigger {
     display:block;
    }
-   .site-nav .nav-item {
+   .nav-item {
     display:inline;
     text-decoration: none;
     padding:0;
