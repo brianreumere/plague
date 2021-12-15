@@ -138,6 +138,7 @@ a:active {
     }
     .nav-item.active {
         border-bottom: 2px solid var(--nav-item-active-color);
+        border-right: none;
     }
 }
 
@@ -154,7 +155,8 @@ a:active {
 }
 
 .nav-item.active {
-    border-left: 2px solid var(--nav-item-active-color);
+    border-right: 2px solid var(--nav-item-active-color);
+    border-bottom: none;
 }
 
 a.nav-item:hover {
