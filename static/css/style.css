@@ -122,6 +122,9 @@ a:active {
     .site-nav input ~ .nav-menu-trigger {
         display: block;
     }
+    .site-nav input:checked ~ .nav-menu-trigger {
+        border: none;
+    }
     .site-nav .nav-item {
         display: inline;
         padding: none;
