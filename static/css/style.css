@@ -68,7 +68,7 @@ a:active {
     top:9px;
     right:15px;
     background-color:var(--background-color);
-    border:1px solid var(--text-color)
+    border:1px solid var(--text-color);
     border-radius:5px;
     text-align:right;
 }
@@ -77,12 +77,12 @@ a:active {
     display: none;
 }
 
-.site-nav input ~ .trigger {
+.site-nav input ~ .nav-menu-trigger {
     clear:both;
     display:none;
 }
 
-.site-nav input:checked ~ .trigger {
+.site-nav input:checked ~ .nav-menu-trigger {
     display:block;
     padding-bottom:5px;
 }
@@ -108,7 +108,7 @@ a:active {
    .site-nav .menu-icon {
     display:none;
    }
-   .site-nav input ~ .trigger {
+   .site-nav input ~ .nav-menu-trigger {
     display:block;
    }
    .site-nav .nav-item {
