@@ -67,8 +67,8 @@ a:active {
     position:absolute;
     top:9px;
     right:15px;
+    border: none;
     background-color:var(--background-color);
-    border:1px solid var(--text-color);
     border-radius:5px;
     text-align:right;
 }
@@ -82,6 +82,10 @@ a:active {
     display:none;
 }
 
+.site-nav input:checked {
+    border:1px solid var(--text-color);
+}
+
 .site-nav input:checked ~ .nav-menu-trigger {
     display:block;
     padding-bottom:5px;
@@ -92,13 +96,12 @@ a:active {
     float:right;
     width:36px;
     height:36px;
-    z-index:2;
     cursor:pointer;
 }
 
-.menu-icon {
-    height: 54px;
-    width: 54px;
+.menu-icon svg {
+    height: 36px;
+    width: 36px;
 }
 
 .menu-icon path {
@@ -110,7 +113,7 @@ a:active {
      position:static;
      float:right;
      line-height: 54px;
-     border: 0px;
+     border: none;
     }
     .site-nav label[for="nav-trigger"] {
     display:none;
