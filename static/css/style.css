@@ -146,8 +146,11 @@ a:active {
     text-decoration: none;
     line-height: 1.5em;
     display: block;
-    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
 }
 
 .nav-item.active {
