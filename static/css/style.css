@@ -77,6 +77,11 @@ a:active {
     display:none
 }
 
+.site-nav input:checked ~ .trigger {
+    display:block;
+    padding-bottom:5px
+}
+
 .site-nav label[for="nav-trigger"] {
     display:block;
     float:right;
