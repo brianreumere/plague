@@ -124,7 +124,7 @@ a:active {
    .site-nav input ~ .nav-menu-trigger {
     display:block;
    }
-   .nav-item {
+   .site-nav .nav-item {
     display:inline;
     text-decoration: none;
     padding:0;
