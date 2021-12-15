@@ -86,7 +86,7 @@ a:active {
     display:block;
     padding-bottom:5px;
     border: 1px solid var(--text-color);
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .site-nav label[for="nav-trigger"] {
@@ -124,7 +124,6 @@ a:active {
     }
     .site-nav .nav-item {
         display: inline;
-        text-decoration: none;
         padding: none;
         margin-left: 10px;
         margin-right: 10px;
@@ -140,13 +139,11 @@ a:active {
     .nav-item.active {
         border-bottom: 2px solid var(--nav-item-active-color);
     }
-    a.nav-item:hover {
-        text-decoration: none;
-    }
 }
 
 .nav-item {
     color: var(--nav-item-link-color);
+    text-decoration: none;
     line-height: 1.5em;
     display: block;
     padding: 5px 10px;
@@ -155,6 +152,10 @@ a:active {
 
 .nav-item.active {
     border-left: 2px solid var(--nav-item-active-color);
+}
+
+a.nav-item:hover {
+    text-decoration: none;
 }
 
 .content {
