@@ -96,11 +96,16 @@ a:active {
     cursor:pointer;
 }
 
+.site-nav .menu-icon path {
+    fill: var(--text-color);
+}
+
 @media screen and (min-width: 800px) {
     .site-nav {
      position:static;
      float:right;
      line-height: 54px;
+     border: 0px;
     }
     .site-nav label[for="nav-trigger"] {
     display:none;
@@ -260,18 +265,24 @@ img.u-photo {
 
 .social-icon {
     display: inline-block;
-    color: var(--social-icon-color);
     padding-left: 10px;
     padding-right: 10px;
     height: 24px;
     width: 24px;
 }
 
+.social-icon path {
+    fill: var(--social-icon-color);
+}
+
 .inline-icon {
     display: inline-block;
-    color: var(--text-color);
     height: 1em;
     width: 1em;
     position: relative;
     top: 0.125em;
+}
+
+.inline-icon path {
+    fill: var(--text-color);
 }
