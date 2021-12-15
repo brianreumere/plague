@@ -78,25 +78,23 @@ a:active {
 }
 
 .site-nav input ~ .nav-menu-trigger {
-    clear:both;
-    display:none;
-}
-
-.site-nav input:checked {
-    border:1px solid var(--text-color);
+    clear: both;
+    display: none;
 }
 
 .site-nav input:checked ~ .nav-menu-trigger {
     display:block;
     padding-bottom:5px;
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
 }
 
 .site-nav label[for="nav-trigger"] {
-    display:block;
-    float:right;
-    width:36px;
-    height:36px;
-    cursor:pointer;
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
 }
 
 .menu-icon svg {
@@ -110,41 +108,38 @@ a:active {
 
 @media screen and (min-width: 800px) {
     .site-nav {
-     position:static;
-     float:right;
-     line-height: 54px;
-     border: none;
+        position: static;
+        float: right;
+        line-height: 54px;
+        border: none;
     }
     .site-nav label[for="nav-trigger"] {
-    display:none;
-   }
-   .menu-icon {
-    display:none;
-   }
-   .site-nav input ~ .nav-menu-trigger {
-    display:block;
-   }
-   .site-nav .nav-item {
-    display:inline;
-    text-decoration: none;
-    padding:0;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-   }
+        display: none;
+    }
+    .menu-icon {
+        display: none;
+    }
+    .site-nav input ~ .nav-menu-trigger {
+        display: block;
+    }
+    .site-nav .nav-item {
+        display: inline;
+        text-decoration: none;
+        padding: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     .nav-item.first {
         margin-left: 0px;
     }
-
     .nav-item.last {
         margin-right: 0px;
     }
-
     .nav-item.active {
         border-bottom: 2px solid var(--nav-item-active-color);
     }
-
     a.nav-item:hover {
         text-decoration: none;
     }
@@ -152,10 +147,14 @@ a:active {
 
 .nav-item {
     color: var(--nav-item-link-color);
-    line-height:1.5em;
-    display:block;
-    padding:5px 10px;
-    margin-left:20px;
+    line-height: 1.5em;
+    display: block;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+.nav-item.active {
+    border-left: 2px solid var(--nav-item-active-color);
 }
 
 .content {
