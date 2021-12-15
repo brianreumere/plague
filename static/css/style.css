@@ -141,8 +141,8 @@ a:active {
         margin-right: 0px;
     }
     .nav-item.active {
-        border-bottom: 2px solid var(--nav-item-active-color);
-        border-right: none;
+        border-bottom: 2px solid var(--nav-item-active-color) !important;
+        border-right: none !important;
     }
 }
 
