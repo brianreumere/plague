@@ -63,69 +63,27 @@ a:active {
     text-decoration: none;
 }
 
-.site-nav {
-    position:absolute;
-    top:12px;
-    right:30px;
-    border: none;
-    background-color:var(--background-color);
-    text-align:right;
-}
-
-.nav-trigger {
-    display: none;
-}
-
-.site-nav input ~ .nav-menu-trigger {
-    clear: both;
-    display: none;
-}
-
-.site-nav input:checked ~ .nav-menu-trigger {
-    display: block;
-    padding-bottom: 5px;
-    border: 1px solid var(--text-color);
-    border-radius:5px;
-    border-radius: 5px;
-}
-
-.site-nav label[for="nav-trigger"] {
-    display: block;
-    float: right;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.menu-icon svg {
-    height: 30px;
-    width: 30px;
-}
-
-.menu-icon path {
-    fill: var(--text-color);
+.header-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media screen and (min-width: 800px) {
+    .site-header {
+        width: 300px;
+        padding-right: 15px;
+        margin-bottom: 1em;
+    }
     .site-nav {
-        position: static;
-        float: right;
+        width: 410px;
+        padding-left: 15px;
+        margin-bottom: 1em;
         line-height: 54px;
-        border: none;
-    }
-    .site-nav label[for="nav-trigger"] {
-        display: none;
-    }
-    .menu-icon {
-        display: none;
-    }
-    .site-nav input ~ .nav-menu-trigger {
-        display: block;
-    }
-    .site-nav input:checked ~ .nav-menu-trigger {
-        border: none;
     }
     .site-nav .nav-item {
+        color: var(--nav-item-link-color);
+        text-decoration: none;
         display: inline;
         padding: none;
         margin-top: 0px;
@@ -144,26 +102,9 @@ a:active {
         margin-right: 0px;
     }
     .nav-item.active {
-        border-bottom: 2px solid var(--nav-item-active-color) !important;
-        border-right: none !important;
+        border-bottom: 2px solid var(--nav-item-active-color);
     }
-}
 
-.nav-item {
-    color: var(--nav-item-link-color);
-    text-decoration: none;
-    line-height: 1.5em;
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
-    padding-right: 10px;
-}
-
-.nav-item.active {
-    border-right: 2px solid var(--nav-item-active-color);
-    border-bottom: none;
 }
 
 a.nav-item:hover {

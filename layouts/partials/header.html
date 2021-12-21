@@ -1,19 +1,14 @@
-<a class="site-header" href="{{ .Site.BaseURL }}">{{ .Site.Params.siteHeaderText }}</a>
-<nav role="navigation" aria-label="Site menu" class="site-nav">
-    <a href="#" id="menu">
-    <label>
-        <input type="checkbox" id="nav-trigger" class="nav-trigger">
-        <span class="menu-icon">
-            Menu
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/></svg>
-        </span>
-    </label>
-    </a>
-    <div class="nav-menu-trigger">
-    {{- $currentPage := . -}}
-    {{- $len_nav_items := (len .Site.Menus.main) -}}
-    {{- range $index, $element := .Site.Menus.main -}}
-    <a class="nav-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}{{ if eq $index 0 }} first{{ end }}{{ if eq (add $index 1) $len_nav_items }} last{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-    {{- end }}
+<div class="header-container">
+    <div class="site-header">
+        <a class="site-header" href="{{ .Site.BaseURL }}">{{ .Site.Params.siteHeaderText }}</a>
     </div>
-</nav>
+    <div class="site-nav">
+        <nav role="navigation" aria-label="Site menu" class="site-nav">
+            {{- $currentPage := . -}}
+            {{- $len_nav_items := (len .Site.Menus.main) -}}
+            {{- range $index, $element := .Site.Menus.main -}}
+            <a class="nav-item{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}{{ if eq $index 0 }} first{{ end }}{{ if eq (add $index 1) $len_nav_items }} last{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+            {{- end }}
+        </nav>
+    </div>
+</div>
