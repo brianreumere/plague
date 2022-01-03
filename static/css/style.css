@@ -108,9 +108,9 @@ a:active {
     div.site-nav {
         width: 410px;
         padding-left: 15px;
+        text-align: right;
     }
     nav.site-nav {
-        text-align: right;
     }
 }
 
