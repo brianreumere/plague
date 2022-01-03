@@ -101,15 +101,15 @@ a:active {
 }
 
 @media screen and (min-width: 800px) {
-    .site-header {
+    div.site-header {
         width: 300px;
         padding-right: 15px;
-        margin-bottom: 1em;
     }
-    .site-nav {
+    div.site-nav {
         width: 410px;
         padding-left: 15px;
-        margin-bottom: 1em;
+    }
+    nav.site-nav {
         text-align: right;
     }
 }
