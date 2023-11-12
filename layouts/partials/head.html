@@ -8,5 +8,9 @@
     {{- else -}}
     <link rel="stylesheet" href="{{ "css/colors-default.css" | absURL }}">
     {{ end }}
+    {{- with .Site.Params.CustomStylesheet -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+    {{ end }}
+    {{ end }}
     <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
 </head>
