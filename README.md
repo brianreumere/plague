@@ -2,10 +2,21 @@
 
 plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that has some [IndieWeb](https://indieweb.org/) stuff like [microformats](https://microformats.org/). It is a work in progress. It also draws heavily from the [Indigo theme](https://github.com/AngeloStavrow/indigo).
 
-Add the theme to your Hugo site by running the following command from your site directory:
+Add the theme to your Hugo site by running the following command from your site directory and adding `theme = 'plague'` to `hugo.toml`:
 
-```
+```sh
 git submodule add https://github.com/brianreumere/plague.git themes/plague
+```
+
+Alternately, import it as a module:
+
+```toml
+[module]
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = true
+    path = 'github.com/brianreumere/plague'
 ```
 
 ## Accessibility
@@ -42,7 +53,7 @@ If you download an SVG icon from Font Awesome and place it in the `font-awesome-
 
 ## Minimum config requirements
 
-These are the minimum required settings in your site's `config.toml` file for this theme to function.
+These are the minimum required settings in your site's `hugo.toml` file for this theme to function.
 
 ```
 baseURL = "https://example.com"
