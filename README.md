@@ -29,9 +29,21 @@ There are three built-in color themes available: `default`, `default-dark`, and 
 
 ### Default
 
+[![A screenshot of a single post titled Commonly Used Passwords, using the default color theme with a light background and dark text](https://github.com/brianreumere/plague/blob/main/images/tn.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot.png)
+
+[![A screenshot of a single post titled Commonly Used Passwords, on a mobile or phone-sized screen, using the default color theme with a light background and dark text](https://github.com/brianreumere/plague/blob/main/images/tn-mobile.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-mobile.png)
+
 ### Default Dark
 
+[![A screenshot of a single post titled Commonly Used Passwords, using the default dark color theme with a dark background and light text](https://github.com/brianreumere/plague/blob/main/images/tn-dark.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-dark.png)
+
+[![A screenshot of a single post titled Commonly Used Passwords, on a mobile or phone-sized screen, using the default dark color theme with a dark background and light text](https://github.com/brianreumere/plague/blob/main/images/tn-mobile-dark.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-mobile-dark.png)
+
 ### Hackers
+
+[![A screenshot of a single post titled Commonly Used Passwords, using the Hackers color theme with a dark background, light text, and purple and green highlights](https://github.com/brianreumere/plague/blob/main/images/tn-hackers.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-hackers.png)
+
+[![A screenshot of a single post titled Commonly Used Passwords, on a mobile or phone-sized screen, using the Hackers color theme with a dark background, light text, and purple and green highlights](https://github.com/brianreumere/plague/blob/main/images/tn-mobile-hackers.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-mobile-hackers.png)
 
 ## Accessibility
 
