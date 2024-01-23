@@ -29,11 +29,11 @@ There are three built-in color themes available: `default`, `default-dark`, and 
 
 ### Default
 
-[![A screenshot of a single post titled Commonly Used Passwords, using the default color theme with a light background and dark text](https://github.com/brianreumere/plague/blob/main/images/tn.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot.png)
+[![A screenshot of a single post titled Commonly Used Passwords, using the default color theme with a light background and dark text](https://github.com/brianreumere/plague/blob/main/images/tn-default.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-default.png)
 
 ### Default Dark
 
-[![A screenshot of a single post titled Commonly Used Passwords, using the default dark color theme with a dark background and light text](https://github.com/brianreumere/plague/blob/main/images/tn-dark.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-dark.png)
+[![A screenshot of a single post titled Commonly Used Passwords, using the default dark color theme with a dark background and light text](https://github.com/brianreumere/plague/blob/main/images/tn-default-dark.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-default-dark.png)
 
 ### Hackers
 
