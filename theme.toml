@@ -3,6 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/brianreumere/plague/blob/main/LICENSE"
 description = "A minimal Hugo theme with microformats"
 homepage = "https://github.com/brianreumere/plague"
+demosite = "https://brianreumere.github.io/plague-demo-site/"
 tags = ["blog", "minimal"]
 features = ["blog"]
 min_version = "0.41.0"

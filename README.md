@@ -6,13 +6,23 @@ plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that has s
 
 ## Installation
 
+### Git submodule
+
 Add the theme to your Hugo site by running the following command from your site directory and adding `theme = "plague"` to `hugo.toml`:
 
 ```sh
 git submodule add https://github.com/brianreumere/plague.git themes/plague
 ```
 
-Alternately, import it as a module in `hugo.toml`:
+### Hugo module
+
+Alternately, initialize your repo for Hugo modules:
+
+```sh
+hugo mod init github.com/brianreumere/plague-demo-site
+```
+
+And import it as a module in `hugo.toml`:
 
 ```toml
 [module]
@@ -20,7 +30,7 @@ Alternately, import it as a module in `hugo.toml`:
     disable = false
     ignoreConfig = false
     ignoreImports = true
-    path = "github.com/brianreumere/plague"
+    path = "github.com/brianreumere/plague"  # Theme
 ```
 
 ## Screenshots
@@ -45,13 +55,19 @@ I'm not very experienced with web accessibility, but this theme does aim to be a
 
 ## Minimum configuration
 
-These are the minimum required settings in your site's `hugo.toml` file for this theme to function (you may also include the theme as a module instead of using the `theme` option, [as detailed in the Installation section](#installation)):
+These are the minimum required settings in your site's `hugo.toml` file for this theme to function (this example assumes you used the Hugo module method from [the Installation section](#installation)):
 
 ```toml
 baseURL = "https://example.net"
 languageCode = "en-us"
 title = "Ellingson Mineral Tech Blog"
-theme = "plague"
+
+[module]
+  [[module.imports]]
+    disable = false
+    ignoreConfig = false
+    ignoreImports = true
+    path = "github.com/brianreumere/plague"  # Theme
 
 [params]
   siteHeaderText = "Ellingson Mineral Tech Blog"
