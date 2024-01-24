@@ -70,6 +70,7 @@ a:active {
 }
 
 .site-nav {
+    overflow: auto;
     text-align: left;
     line-height: 54px;
     width: 100%;
@@ -78,7 +79,7 @@ a:active {
 .site-nav .nav-item {
     color: var(--nav-item-link-color);
     text-decoration: none;
-    padding: none;
+    padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 10px;
