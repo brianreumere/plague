@@ -192,10 +192,10 @@ menu:
 
 ### SVG icon
 
-If you download an SVG icon (e.g., from Font Awesome) and place it in the `icons` directory at the root of your Hugo site repo (**not** in the `content` or `static` directories), you can use it inline with your Markdown content by using the `fa` shortcode. The parameter is the name of the icon file (without the `.svg` file extension). The SVG will have the `aria-hidden="true"` attribute added so it [isn't included in the accessibility tree](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute), so do not use it for any interactive functionality; it should be purely decorative.
+If you download an SVG icon (e.g., from Font Awesome) and place it in the `icons` directory at the root of your Hugo site repo (**not** in the `content` or `static` directories), you can use it inline with your Markdown content by using the `icon` shortcode. The parameter is the name of the icon file (without the `.svg` file extension). The SVG will have the `aria-hidden="true"` attribute added so it [isn't included in the accessibility tree](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute), so do not use it for any interactive functionality; it should be purely decorative.
 
 ```
-{{< fa "github" >}}
+{{< icon "github" >}}
 ```
 
 ### Callout

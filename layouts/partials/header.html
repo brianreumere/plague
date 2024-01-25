@@ -3,7 +3,7 @@
         <a class="site-header" href="{{ .Site.BaseURL }}">{{ .Site.Params.siteHeaderText }}</a>
     </div>
     <div class="site-nav">
-        <nav role="navigation" aria-label="Site menu" class="site-nav">
+        <nav aria-label="Site menu" class="site-nav">
             {{- $currentPage := . -}}
             {{- range $index, $element := .Site.Menus.main -}}
             {{- $len_nav_items := (len $.Site.Menus.main) -}}
