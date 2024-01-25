@@ -4,6 +4,8 @@
 
 plague is a [Minima](https://github.com/jekyll/minima)-inspired theme that has some [IndieWeb](https://indieweb.org/) features like [microformats](https://microformats.org/). It also draws heavily from the [Indigo theme](https://github.com/AngeloStavrow/indigo).
 
+There is a [demo repo available at plague-demo-site](https://github.com/brianreumere/plague-demo-site) and a [demo site available here](https://brianreumere.github.io/plague-demo-site/).
+
 ## Installation
 
 ### Git submodule
