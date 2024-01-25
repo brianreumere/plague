@@ -9,5 +9,5 @@ features = ["blog"]
 min_version = "0.41.0"
 
 [author]
-  name = "brian@mutualaid.info"
+  name = "Brian Reumere"
   homepage = "https://mutualaid.info"
