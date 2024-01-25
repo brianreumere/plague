@@ -64,6 +64,7 @@ a:active {
 }
 
 .header-container {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -158,6 +159,7 @@ pre:focus {
 }
 
 blockquote {
+    color: var(--blockquote-text-color);
     background-color: var(--blockquote-background-color);
     border-left: 10px solid var(--blockquote-highlight-color);
     border-radius: 5px;
@@ -167,10 +169,17 @@ blockquote {
 }
 
 blockquote p {
+    margin: 0px;
+    padding: 10px;
+}
+
+blockquote footer {
+    margin: 0px;
     padding: 10px;
 }
 
 p.callout {
+    color: var(--callout-text-color);
     background-color: var(--callout-background-color);
     border-left: 10px solid var(--callout-highlight-color);
     border-radius: 5px;
@@ -191,16 +200,13 @@ hr {
     width: 40px;
 }
 
-footer {
-    margin-bottom: 15px;
-    color: var(--light-text-color);
-    font-size: 14px;
-}
-
 .footer-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 15px;
+    color: var(--light-text-color);
+    font-size: 14px;
 }
 
 .footer-container p {

@@ -1,20 +1,20 @@
 :root {
-    --background-color: #000000;
-    --text-color: #ffffff;
-    --light-text-color: #d6d6d6;
-    --hr-color: #d6d6d6;
-    --link-color: #9a9ae5;
-    --active-link-color: #ffffff;
-    --nav-item-link-color: #9a9ae5;
-    --nav-item-active-color: #9a9ae5;
-    --selection-highlight-color: #9a9ae5;
-    --preformatted-background-color: #444444;
-    --preformatted-text-color: #ffffff;
-    --callout-background-color: #2323af;
-    --callout-text-color: #ffffff;
-    --callout-highlight-color: #282885;
-    --blockquote-background-color: #2323af;
+    --background-color: #202020;
+    --text-color: #f9f9f9;
+    --light-text-color: #dfdfdf;
+    --hr-color: #a3b8f5;
+    --link-color: #a3b8f5;
+    --active-link-color: #f9f9f9;
+    --nav-item-link-color: #a3b8f5;
+    --nav-item-active-color: #a3b8f5;
+    --selection-highlight-color: #305ee8;
+    --preformatted-background-color: #3c3c3c;
+    --preformatted-text-color: #f9f9f9;
+    --callout-background-color: #2445a8;
+    --callout-text-color: #f9f9f9;
+    --callout-highlight-color: #bac9f7;
+    --blockquote-background-color: #595959;
     --blockquote-text-color: #ffffff;
-    --blockquote-highlight-color: #282885;
-    --social-icon-color: #a8a8a8;
+    --blockquote-highlight-color: #dfdfdf;
+    --social-icon-color: #a3b8f5;
 }

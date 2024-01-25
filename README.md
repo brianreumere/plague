@@ -33,21 +33,17 @@ And import it as a module in `hugo.toml`:
     path = "github.com/brianreumere/plague"  # Theme
 ```
 
-## Screenshots
+## Colors
 
-There are three built-in color themes available: `default`, `default-dark`, and `hackers`.
+There are two built-in color themes, `default` and `gibson`. They will automatically set a dark or light variety based on a user's preference (via the `prefers-color-scheme` CSS media feature). To force the site to always use the light or dark variety of a theme, specify `default-light`, `default-dark`, `gibson-light`, or `gibson-dark` for the `colors` parameter.
 
 ### Default
 
-[![A screenshot of a single post titled Commonly Used Passwords, using the default color theme with a light background and dark text](https://github.com/brianreumere/plague/blob/main/images/tn-default.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-default.png)
+[![A screenshot of a single example post titled Commonly Used Passwords, showing the default color theme. The left half of the screenshot shows the light variety with a light background and dark text. The right half of the screenshot shows the dark variety with a dark background and light text.](https://github.com/brianreumere/plague/blob/main/images/tn.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot.png)
 
-### Default Dark
+### Gibson
 
-[![A screenshot of a single post titled Commonly Used Passwords, using the default dark color theme with a dark background and light text](https://github.com/brianreumere/plague/blob/main/images/tn-default-dark.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-default-dark.png)
-
-### Hackers
-
-[![A screenshot of a single post titled Commonly Used Passwords, using the Hackers color theme with a dark background, light text, and purple and green highlights](https://github.com/brianreumere/plague/blob/main/images/tn-hackers.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-hackers.png)
+[![A screenshot of a single example post titled Commonly Used Passwords, showing the Gibson color theme. The left half of the screenshot shows the light variety with a light background and dark text. The right half of the screenshot shows the dark variety with a dark background and light text. Both varieties have purple and green color highlights.](https://github.com/brianreumere/plague/blob/main/images/tn-gibson.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-gibson.png)
 
 ## Accessibility
 

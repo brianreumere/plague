@@ -1,0 +1,20 @@
+:root {
+    --background-color: #fff9ec;
+    --text-color: #141414;
+    --light-text-color: #545454;
+    --hr-color: #206051;
+    --link-color: #4b0fff;
+    --active-link-color: #141414;
+    --nav-item-link-color: #206051;
+    --nav-item-active-color: #206051;
+    --selection-highlight-color: #70dbc4;
+    --preformatted-background-color: #333333;
+    --preformatted-text-color: #70dbc4;
+    --callout-background-color: #9697e9;
+    --callout-text-color: #000000;
+    --callout-highlight-color: #460df2;
+    --blockquote-background-color: #dddddd;
+    --blockquote-text-color: #0a0a0a;
+    --blockquote-highlight-color: #2dd2ac;
+    --social-icon-color: #206051;
+}
