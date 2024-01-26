@@ -12,9 +12,11 @@
     --preformatted-text-color: #f9f9f9;
     --callout-background-color: #2445a8;
     --callout-text-color: #f9f9f9;
+    --callout-link-color: #e8eefd;
     --callout-highlight-color: #bac9f7;
     --blockquote-background-color: #595959;
     --blockquote-text-color: #ffffff;
+    --blockquote-link-color: #ffffff;
     --blockquote-highlight-color: #dfdfdf;
     --social-icon-color: #a3b8f5;
 }

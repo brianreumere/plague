@@ -8,23 +8,15 @@ There is a [demo repo available at plague-demo-site](https://github.com/brianreu
 
 ## Installation
 
-### Git submodule
-
-Add the theme to your Hugo site by running the following command from your site directory and adding `theme = "plague"` to `hugo.toml`:
-
-```sh
-git submodule add https://github.com/brianreumere/plague.git themes/plague
-```
-
 ### Hugo module
 
-Alternately, initialize your repo for Hugo modules:
+Initialize your repo for [Hugo modules](https://gohugo.io/hugo-modules/):
 
 ```sh
 hugo mod init github.com/brianreumere/plague-demo-site
 ```
 
-And import it as a module in `hugo.toml`:
+Then import the theme as a module in `hugo.toml`:
 
 ```toml
 [module]
@@ -35,17 +27,25 @@ And import it as a module in `hugo.toml`:
     path = "github.com/brianreumere/plague"  # Theme
 ```
 
+### Git submodule
+
+Alternately, add the theme as a Git submodule. Run the following command from your site directory and then add `theme = "plague"` to `hugo.toml`:
+
+```sh
+git submodule add https://github.com/brianreumere/plague.git themes/plague
+```
+
 ## Colors
 
-There are two built-in color themes, `default` and `gibson`. They will automatically set a dark or light variety based on a user's preference (via the `prefers-color-scheme` CSS media feature). To force the site to always use the light or dark variety of a theme, specify `default-light`, `default-dark`, `gibson-light`, or `gibson-dark` for the `colors` parameter.
+There are two built-in color schemes, `default` and `gibson`. They will automatically set a dark or light variety based on a user's preference (via the `prefers-color-scheme` CSS media feature). To force the site to always use the light or dark variety of a color scheme, specify `default-light`, `default-dark`, `gibson-light`, or `gibson-dark` for the `colors` parameter.
 
 ### Default
 
-[![A screenshot of a single example post titled Commonly Used Passwords, showing the default color theme. The left half of the screenshot shows the light variety with a light background and dark text. The right half of the screenshot shows the dark variety with a dark background and light text.](https://github.com/brianreumere/plague/blob/main/images/tn.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot.png)
+[![A screenshot of a single example post titled Commonly Used Passwords, showing the default color scheme. The left half of the screenshot shows the light variety with a light background and dark text. The right half of the screenshot shows the dark variety with a dark background and light text.](https://github.com/brianreumere/plague/blob/main/images/tn.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot.png)
 
 ### Gibson
 
-[![A screenshot of a single example post titled Commonly Used Passwords, showing the Gibson color theme. The left half of the screenshot shows the light variety with a light background and dark text. The right half of the screenshot shows the dark variety with a dark background and light text. Both varieties have purple and green color highlights.](https://github.com/brianreumere/plague/blob/main/images/tn-gibson.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-gibson.png)
+[![A screenshot of a single example post titled Commonly Used Passwords, showing the Gibson color scheme. The left half of the screenshot shows the light variety with a light background and dark text. The right half of the screenshot shows the dark variety with a dark background and light text. Both varieties have purple and green color highlights.](https://github.com/brianreumere/plague/blob/main/images/tn-gibson.png?raw=true)](https://github.com/brianreumere/plague/blob/main/images/screenshot-gibson.png)
 
 ## Accessibility
 

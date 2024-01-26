@@ -13,9 +13,11 @@
         --preformatted-text-color: #70dbc4;
         --callout-background-color: #9697e9;
         --callout-text-color: #000000;
+        --callout-link-color: #120047;
         --callout-highlight-color: #460df2;
         --blockquote-background-color: #dddddd;
         --blockquote-text-color: #0a0a0a;
+        --blockquote-link-color: #0a0a0a;
         --blockquote-highlight-color: #2dd2ac;
         --social-icon-color: #206051;
     }
@@ -34,11 +36,13 @@
         --selection-highlight-color: #70dbc4;
         --preformatted-background-color: #333333;
         --preformatted-text-color: #70dbc4;
-        --callout-background-color: #4a4cb5;
+        --callout-background-color: #3d3e94;
         --callout-text-color: #ffffff;
+        --callout-link-color: #e9e3fc;
         --callout-highlight-color: #aa90f9;
         --blockquote-background-color: #555555;
         --blockquote-text-color: #fafafa;
+        --blockquote-link-color: #fafafa;
         --blockquote-highlight-color: #40bfa2;
         --social-icon-color: #70dbc4;
     }

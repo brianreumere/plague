@@ -178,6 +178,10 @@ blockquote footer {
     padding: 10px;
 }
 
+blockquote a {
+    color: var(--blockquote-link-color);
+}
+
 p.callout {
     color: var(--callout-text-color);
     background-color: var(--callout-background-color);
@@ -189,6 +193,10 @@ p.callout {
     margin-left: 20px;
     margin-right: 20px;
     font-size: 14px;
+}
+
+.callout a {
+    color: var(--callout-link-color);
 }
 
 hr {
