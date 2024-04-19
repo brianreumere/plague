@@ -5,4 +5,9 @@
     <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
 </p>
 {{ end }}
+{{ with .OutputFormats.Get "rss" -}}
+<p>
+    <a href="{{ .Permalink }}"><img alt="RSS feed icon" src="{{ "icons/rss.png" | absURL }}"></a>
+</p>
+{{ end }}
 {{ end }}
