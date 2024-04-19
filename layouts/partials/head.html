@@ -12,4 +12,7 @@
     {{- with .Site.Params.CustomStylesheet -}}
     <link rel="stylesheet" href="{{ . | absURL }}">
     {{ end }}
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
 </head>
